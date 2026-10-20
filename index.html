@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="CPSNS 전 상품 NET 단가 280원 → 240원. 2026년 12월 31일 집행분까지 적용되는 nap reward 연말 특별 프로모션.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="연말정산보다 먼저 오는 혜택 | nap reward CPSNS 특별 프로모션">
+<meta property="og:description" content="CPSNS 전 상품 NET 단가 280원 → 240원 (~12/31 집행까지)">
+<title>CPSNS 연말 특별 프로모션</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@900&display=swap">
+<style>
+/* Layout: one warm vertical poster column (max 720px) on a brick hero that melts into cream; single deliberate warm look in every theme */
+:root{
+  --brick:#6B2414; --cocoa:#3B1F14; --cream:#FBF1E3; --paper:#FFFFFF;
+  --oat:#F3D9B8; --mustard:#F2B04A; --rust:#B8391F; --pumpkin:#E8862F;
+  --berry:#C9472B; --pine:#2F5D3A; --muted:#6E4A3A; --line:#EBD3BC;
+  --chip:#FBE3CF; --faint:#9C7F70;
+  --f-display:'Black Han Sans','Noto Sans KR',sans-serif;
+  --f-body:'Noto Sans KR',system-ui,sans-serif;
+  --f-logo:'Nunito','Noto Sans KR',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+button,input{letter-spacing:inherit}
+body{background:var(--cream);color:var(--cocoa);font-family:var(--f-body);font-size:16px;letter-spacing:-0.02em;word-break:keep-all;overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2{margin:0;text-wrap:balance}
+h1{font-family:var(--f-display);font-weight:400}
+h2{font-family:var(--f-body);font-weight:900}
+.logo{font-family:var(--f-logo);font-weight:900;letter-spacing:-0.5px}
+.logo b{color:var(--berry);font-weight:900}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--brick);color:#FFF4E2}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%}
+.garland{position:absolute;left:0;right:0;top:0;height:60px;pointer-events:none}
+.garland svg{position:absolute;inset:0;width:100%;height:100%}
+.bulb{position:absolute;width:12px;height:22px;margin-left:-6px}
+.bulb::before{content:"";position:absolute;left:3.5px;top:0;width:5px;height:5px;border-radius:1px;background:#3B1F14}
+.bulb::after{content:"";position:absolute;left:0;top:4px;width:12px;height:16px;border-radius:50% 50% 50% 50% / 45% 45% 55% 55%;background:var(--c);box-shadow:0 0 10px var(--c)}
+@media (max-width:640px){.bulb:nth-child(even){display:none}}
+
+.hero .wrap{position:relative;padding-block:64px 0;display:flex;flex-direction:column;gap:28px}
+.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.period{display:flex;flex-direction:column;gap:2px;font-size:12px;font-weight:500;color:var(--oat)}
+.topbar .logo{font-size:24px;color:#FFF4E2}
+.topbar .logo b{color:#FFF4E2}
+.foot .logo b{color:var(--cocoa)}
+.headline{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
+.pill{font-size:12.5px;font-weight:700;color:var(--cocoa);background:var(--oat);border-radius:999px;padding:5px 12px}
+.headline h1{font-size:clamp(46px,10vw,84px);line-height:0.93;margin-top:0.2em;letter-spacing:0;word-spacing:-0.14em;font-kerning:none;font-feature-settings:"kern" 0}
+.slash{position:relative;display:inline-block;padding:0 2px}
+.slash::after{content:"";position:absolute;left:-3px;right:-3px;top:52%;height:3px;border-radius:2px;background:var(--mustard)}
+.logo-svg{display:block;height:auto}
+.topbar .logo-svg{width:132px;--logo-n:#FFF4E2;--logo-rest:#FFF4E2}
+.foot .logo-svg{width:170px}
+.calc-link{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:56px;margin-top:8px;padding:0 24px;border-radius:999px;background:var(--mustard);color:var(--cocoa);font-size:17px;font-weight:900;text-decoration:none;border:3px solid var(--cocoa);box-shadow:0 5px 0 var(--cocoa)}
+.calc-link .tag{position:absolute;top:-14px;right:-12px;background:var(--rust);color:#FFFFFF;font-size:12px;font-weight:900;border-radius:999px;padding:4px 9px;border:2px solid #FFF4E2;transform:rotate(8deg)}
+.calc-link .chev{flex:none}
+.calc-link:hover{background:#FFC766}
+.calc-link:focus-visible{outline:3px solid var(--mustard);outline-offset:2px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--mustard);color:var(--cocoa);font-size:14px;font-weight:900;border-radius:999px;padding:6px 14px}
+.hint{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:900;color:var(--brick)}
+.hint svg{flex:none}
+.buddy{position:absolute;right:6px;top:-92px;width:104px;height:auto;z-index:2;pointer-events:none}
+@media (max-width:640px){.buddy{width:84px;top:-76px}}
+.calc-wrap{position:relative;margin-top:56px}
+@media (max-width:640px){.calc-wrap{margin-top:80px}}
+.camp{display:block;width:100%;height:clamp(210px,17.2vw,300px);margin-top:36px}
+.camp .sky{transition:opacity .6s}
+.camp .sk1,.camp .sk2{transition:stop-color .6s}
+.camp.t-morning .sk1{stop-color:#F9C6A0}.camp.t-morning .sk2{stop-color:#FDEBD6}
+.camp.t-noon .sk1{stop-color:#B9E0F2}.camp.t-noon .sk2{stop-color:#EAF6FB}
+.camp.t-evening .sk1{stop-color:#D9788A}.camp.t-evening .sk2{stop-color:#F8C68F}
+.camp.t-night .sk1{stop-color:#1F2347}.camp.t-night .sk2{stop-color:#4A4670}
+.camp .sun{transition:transform .8s ease,opacity .6s;color:#FFD54A}
+.camp.t-morning .sun{transform:translate(190px,118px);color:#F9B24A}
+.camp.t-noon .sun{transform:translate(1150px,58px);color:#FFD54A}
+.camp.t-evening .sun{transform:translate(1110px,132px);color:#F07A3A}
+.camp.t-night .sun{transform:translate(1110px,170px);opacity:0}
+.camp.t-morning .rays,.camp.t-evening .rays{opacity:.6}
+.camp .stars{opacity:0;transition:opacity .6s}.camp.t-night .stars{opacity:1}
+.camp .clouds{fill:#FFFFFF;opacity:.9;transition:opacity .6s}
+.camp.t-evening .clouds{fill:#F6C1A6}.camp.t-night .clouds{opacity:.12}
+.camp .mtn{fill:#E9D3BD}.camp.t-evening .mtn{fill:#E2B79A}.camp.t-night .mtn{fill:#5B5778}
+.camp .bk{fill:#EBD3BC}.camp.t-night .bk{fill:#CFC3D3}
+.camp .glow{opacity:0;transition:opacity .6s}.camp.t-evening .glow{opacity:.5}.camp.t-night .glow{opacity:1}
+.camp.t-night .bulbs circle{filter:drop-shadow(0 0 5px #FFD27A)}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+.headline h1 span{color:var(--mustard)}
+.sub{margin:-9px 0 0;font-size:19px;font-weight:500;-webkit-text-stroke:0.45px currentColor;color:var(--oat)}
+.sub del{color:#FFF4E2;text-decoration:none;font-weight:700}
+.sub strong{color:#FFF4E2;font-weight:900;font-size:22px}
+.scene{display:flex;justify-content:center}
+.scene > svg{width:100%;max-width:620px;height:auto}
+@media (max-width:640px){.scene{margin-inline:-12px}}
+.hero-curve{position:relative;height:56px;background:var(--cream);border-radius:40px 40px 0 0}
+
+/* price card */
+.price{position:relative;margin-top:16px}
+.card{position:relative;background:var(--paper);border-radius:28px;padding:32px 24px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;box-shadow:8px 8px 0 var(--cocoa);border:3px solid var(--cocoa);padding-top:40px}
+.card-label{font-size:18px;font-weight:700;line-height:1.1;color:var(--muted)}
+.price-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.price-row .arrow{flex:none;margin-left:10px;margin-right:-4px}
+.price-row del{line-height:1}
+.price-row del{font-size:44px;font-weight:700;color:var(--muted);text-decoration:none}
+.price-row .slash::after{background:var(--rust)}
+.exclude{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--rust);color:#FFFFFF;border-radius:16px;padding:14px 16px;font-size:15px;font-weight:700;line-height:1.5;text-align:left}
+.exclude svg{flex:none}
+.price-new{font-family:var(--f-body);font-weight:900;font-size:96px;line-height:1;color:var(--rust);background:none;border-radius:0;padding:4px 16px 6px}
+.price-new small{font-size:40px}
+.price-new .hl{background:none;padding:0}
+.price-new{margin-top:-0.27em;margin-bottom:-0.125em}
+.card .ribbon{position:absolute;top:-19px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--rust);color:#FFFFFF;font-size:15px;font-weight:900;padding:8px 20px;border-radius:999px;border:3px solid var(--cocoa)}
+.stamp{position:absolute;top:-30px;right:-18px;width:96px;height:96px;border-radius:50%;background:var(--mustard);border:3px solid var(--cocoa);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--cocoa);font-weight:900;line-height:1.1;transform:rotate(12deg);z-index:2}
+.stamp::before{content:"";position:absolute;inset:5px;border-radius:50%;border:2px dashed var(--cocoa);opacity:.55}
+.stamp .s1{font-size:12px}.stamp .s2{font-size:22px}.stamp .s3{font-size:11px;letter-spacing:.08em}
+@media (max-width:640px){.stamp{width:78px;height:78px;top:-34px;right:-8px}.stamp .s2{font-size:18px}.stamp .s1,.stamp .s3{font-size:10px}}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:3px;line-height:1.3;font-size:14px;font-weight:700;color:var(--brick);background:var(--chip);border-radius:999px;padding:6.5px 14px 7.5px}
+.chip svg{flex:none;display:block;width:0.64em;height:0.8em;margin-left:2px;transform:translateY(0.05em)}
+.chips .chip:first-child{padding-left:15.5px;padding-right:12.5px}
+@media (max-width:480px){.chips .chip:first-child{padding-left:12.5px;padding-right:9.5px}}
+.chip svg{flex:none;display:block}
+.note{font-size:11px;line-height:1.1;color:var(--muted)}
+
+/* sections */
+.sec{position:relative;padding-block:44px 0}
+.sec-head{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.sec-head h2{font-size:34px;line-height:1.2}
+.sec-head p{margin:0;font-size:15px;color:var(--muted)}
+.channels{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:20px}
+.ch-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.ch{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--paper);border:2px solid var(--line);font-size:15px;font-weight:700}
+.ch svg{flex:none;display:block;transform:translateY(1px)}
+@media (max-width:560px){.channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%}.ch-row{display:contents}.ch{justify-content:center;padding:0 10px;font-size:14px}.ch{white-space:nowrap}.ch-row:last-child .ch:nth-child(2){grid-column:1 / -1;order:1}}
+.deco{position:absolute;pointer-events:none}
+@media (max-width:640px){.deco{display:none}}
+
+/* calculator */
+.calc{position:relative;background:var(--mustard);color:var(--cocoa);border:4px solid var(--cocoa);border-radius:34px;padding:36px 22px 24px;display:flex;flex-direction:column;gap:20px;box-shadow:8px 8px 0 var(--cocoa)}
+.calc .deco{display:block}
+.tabs{display:flex;gap:6px;background:rgba(59,31,20,.12);border-radius:999px;padding:5px;align-self:center;position:relative}
+.tab{appearance:none;border:0;background:transparent;color:var(--cocoa);font:700 15px var(--f-body);min-height:44px;padding:0 18px;border-radius:999px;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--cocoa);color:#FFF4E2}
+.field{display:flex;flex-direction:column;gap:8px;position:relative}
+.field label{font-size:15px;font-weight:900;color:var(--cocoa)}
+.input-box{display:flex;align-items:center;background:#FFF8EC;border:3px solid var(--cocoa);border-radius:18px;padding:0 18px;min-height:64px;box-shadow:inset 0 4px 0 rgba(59,31,20,.08)}
+.input-box input{flex:1;min-width:0;border:0;background:transparent;font:900 26px var(--f-body);color:var(--cocoa);font-variant-numeric:tabular-nums;outline:none}
+.input-box span{font-size:18px;font-weight:700;color:var(--muted)}
+.input-box:focus-within{box-shadow:0 0 0 4px #FFF4E2}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fee{display:flex;flex-direction:column;gap:8px}
+.fee-label{font-size:15px;font-weight:900;color:var(--cocoa)}
+.key[aria-pressed="true"]{background:var(--cocoa);color:#FFF4E2;transform:translateY(3px);box-shadow:0 1px 0 var(--cocoa)}
+.markup{display:flex;align-items:center;gap:10px;background:var(--rust);color:#FFFFFF;border:3px solid var(--cocoa);border-radius:16px;padding:12px 14px;font-size:15px;font-weight:900;line-height:1.45}
+.markup svg{flex:none}
+.markup.on{background:var(--pine)}
+.preset,.key{appearance:none;border:3px solid var(--cocoa);background:#FFF4E2;color:var(--cocoa);font:900 14px var(--f-body);min-height:44px;padding:0 14px;border-radius:14px;cursor:pointer;box-shadow:0 4px 0 var(--cocoa);transition:transform .08s,box-shadow .08s}
+.preset:active,.key:active{transform:translateY(3px);box-shadow:0 1px 0 var(--cocoa)}
+.preset:hover,.key:hover{background:#FFFFFF}
+.key[aria-pressed="true"]:hover{background:var(--cocoa)}
+.tab:focus-visible,.preset:focus-visible,.key:focus-visible,.btn:focus-visible,.copy:focus-visible{outline:3px solid var(--mustard);outline-offset:2px}
+.rows{display:flex;flex-direction:column;gap:10px;position:relative;font-variant-numeric:tabular-nums}
+.r{display:flex;justify-content:space-between;gap:12px;font-size:15px;font-weight:500;color:var(--cocoa)}
+.r b{color:var(--cocoa);font-weight:900}
+.r.old b{color:#8A5A3C;text-decoration:line-through;text-decoration-thickness:2px}
+.result{position:relative;text-align:center;background:var(--cocoa);border-radius:22px;padding:18px 16px;display:flex;flex-direction:column;gap:4px;box-shadow:inset 0 0 0 3px #2A150D}
+.result .lead{font-size:14px;color:var(--oat)}
+.result .big{font-family:var(--f-body);font-weight:900;font-size:clamp(34px,8vw,52px);line-height:1.15;color:#FFF4E2;font-variant-numeric:tabular-nums}
+.result .big em{font-style:normal;color:var(--mustard)}
+.result .fine{font-size:12px;color:#C9A88F;margin-top:8px}
+
+/* contact */
+.contact{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:999px;background:var(--rust);color:#FFFFFF;font-weight:900;font-size:17px;text-decoration:none}
+.btn:hover{background:var(--brick)}
+.who{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:15px;margin-top:4px;margin-bottom:10px}
+.who .copied{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:4px;white-space:nowrap;min-height:0}
+.mail{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
+.mail code{font-family:var(--f-body);font-size:16px;font-weight:700;color:var(--brick);user-select:all}
+.copy{appearance:none;border:1px solid var(--line);background:var(--paper);color:var(--cocoa);font:700 13px var(--f-body);min-height:36px;padding:0 12px;border-radius:999px;cursor:pointer}
+.copied{font-size:13px;color:var(--pine);min-height:18px}
+.notice{width:100%;background:var(--paper);border-radius:20px;padding:22px 24px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;text-align:left}
+.notice strong{font-size:14px;color:var(--rust)}
+.notice li{position:relative;padding-left:14px}
+.notice li::before{content:"";position:absolute;left:2px;top:0.8em;width:4px;height:4px;border-radius:50%;background:var(--muted)}
+.notice ul{flex:0 1 auto;min-width:0;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500;line-height:1.7;color:var(--muted)}
+.foot{padding-block:28px 0;display:flex;flex-direction:column;align-items:center}
+.foot .logo{font-size:28px;color:var(--cocoa)}
+.foot-scene{position:relative;width:100%;margin-top:4px;margin-bottom:-1px}
+.foot-scene .land{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1280/256}
+.foot{background:linear-gradient(to bottom,var(--cream) 0%,var(--cream) 55%,#FBF5EE 100%)}
+.foot-end{width:100%;background:linear-gradient(to bottom,#FFFFFF 0%,#FFFFFF 40%,#FBF1E3 100%);padding-block:12px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));text-align:center;font-family:var(--f-body);font-size:14px;font-weight:500;line-height:1.7;color:var(--muted)}
+
+.strip{display:block;width:100%;height:84px;margin-bottom:8px}
+.kid{animation:none}
+.input-box.pulse{animation:none}
+@media (prefers-reduced-motion:no-preference){
+  .input-box.pulse{animation:ring 1.6s ease-out infinite}
+  .hint svg{animation:nudge 1s ease-in-out infinite alternate}
+  .flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick .5s ease-in-out infinite alternate}
+  .big.pop{animation:pop .35s ease-out}
+  .sled{animation:slide 4s ease-in-out infinite}
+  .buddy{transform-origin:50% 100%;animation:wobble 1.6s ease-in-out infinite alternate}
+  .hop{animation:hop 1.3s ease-in-out infinite}
+  .stamp{animation:stampwob 3s ease-in-out infinite}
+  .hatbob{animation:hatbob 1.6s ease-in-out infinite}
+  .calc-link{animation:glow 1.8s ease-out infinite}
+  .calc-link .chev{animation:nudge .8s ease-in-out infinite alternate}
+  .calc-link .tag{animation:wiggle 2.4s ease-in-out infinite}
+  .hop.late{animation-delay:.5s}
+  .kid{animation:bob .9s ease-in-out infinite alternate}
+  .kid:nth-of-type(2n){animation-delay:.45s}
+  .swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 3s ease-in-out infinite alternate}
+  .swing:nth-of-type(2n){animation-delay:1.2s}
+}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(184,57,31,.75)}100%{box-shadow:0 0 0 14px rgba(184,57,31,0)}}
+@keyframes glow{0%{box-shadow:0 5px 0 var(--cocoa),0 0 0 0 rgba(242,176,74,.8)}100%{box-shadow:0 5px 0 var(--cocoa),0 0 0 16px rgba(242,176,74,0)}}
+@keyframes wiggle{0%,80%,100%{transform:rotate(8deg)}85%{transform:rotate(-6deg)}90%{transform:rotate(12deg)}95%{transform:rotate(2deg)}}
+@keyframes hatbob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@keyframes stampwob{0%,100%{transform:rotate(12deg)}50%{transform:rotate(4deg) scale(1.04)}}
+@keyframes wobble{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+@keyframes hop{0%,100%{transform:translateY(0)}45%{transform:translateY(-16px)}}
+@keyframes nudge{from{transform:translateY(0)}to{transform:translateY(4px)}}
+@keyframes flick{from{transform:scale(1,1)}to{transform:scale(.92,1.08)}}
+@keyframes pop{0%{transform:scale(.94)}60%{transform:scale(1.05)}100%{transform:scale(1)}}
+@keyframes slide{0%,100%{transform:translate(0,0)}50%{transform:translate(28px,10px)}}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+@keyframes swing{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+@media (prefers-reduced-motion:no-preference){.steam path{animation:rise 3.6s ease-in-out infinite}.steam path:nth-child(2){animation-delay:.6s}.steam path:nth-child(3){animation-delay:1.2s}}
+@keyframes rise{0%,100%{transform:translateY(0);opacity:.85}50%{transform:translateY(-6px);opacity:.45}}
+@media (max-width:480px){.calc-link{font-size:15px;padding:0 18px}.price-row{gap:6px}.price-row del{font-size:clamp(22px,7.4vw,30px)}.price-new{font-size:clamp(44px,15vw,60px)}.price-new small{font-size:clamp(20px,6.8vw,28px)}.price-row svg{width:clamp(24px,7.4vw,32px);height:clamp(24px,7.4vw,32px)}.price-new{padding:3px 12px 4px}.card{padding-left:16px;padding-right:16px}.chip{font-size:13px;padding:5.5px 11px 6.5px}.chips{gap:6px}}
+</style>
+<style>html,body{margin:0;padding:0} img{max-width:100%} [hidden]{display:none!important}</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="leaf" viewBox="-30 -30 60 60"><path d="M0 -26 C16 -14 16 14 0 26 C-16 14 -16 -14 0 -26z"></path><path d="M0 -24V24" fill="none" stroke="#6B2414" stroke-width="2" opacity="0.5"></path></symbol>
+<symbol id="maple" viewBox="-30 -32 60 64"><path d="M0 -28 L6 -12 L20 -16 L12 -2 L24 4 L8 8 L6 22 L0 12 L-6 22 L-8 8 L-24 4 L-12 -2 L-20 -16 L-6 -12z"></path><path d="M0 12V30" fill="none" stroke="#6B2414" stroke-width="2.5" stroke-linecap="round"></path></symbol>
+<symbol id="flake" viewBox="-20 -20 40 40"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M0 -16V16"></path><path d="M-14 -8L14 8"></path><path d="M-14 8L14 -8"></path><path d="M-4 -12L0 -8L4 -12"></path><path d="M-4 12L0 8L4 12"></path></g></symbol>
+<symbol id="pine" viewBox="0 0 80 120"><path d="M40 0 L62 34 H52 L72 64 H58 L80 96 H0 L22 64 H8 L28 34 H18z" fill="#2F5D3A"></path><path d="M28 34 h24 l-4 6 h-16z M22 64 h36 l-4 6 h-28z" fill="#FFF4E2"></path><rect x="34" y="96" width="12" height="20" fill="#6B3A22"></rect></symbol>
+<symbol id="kid" viewBox="0 0 60 120"><path d="M22 92 v22 h7 v-22z M33 92 v22 h7 v-22z" fill="#3B1F14"></path><path d="M18 50 Q30 44 42 50 L46 94 H14z" fill="currentColor"></path><circle cx="30" cy="34" r="13" fill="#F6D2B0"></circle><path d="M17 32 a13 13 0 0 1 26 0z"></path><rect x="16" y="29" width="28" height="5" rx="2.5" fill="#FFF4E2"></rect><circle cx="30" cy="17" r="4" fill="#FFF4E2"></circle><circle cx="25" cy="37" r="1.6" fill="#3B1F14"></circle><circle cx="35" cy="37" r="1.6" fill="#3B1F14"></circle><circle cx="22" cy="41" r="2" fill="#F2A08A"></circle><circle cx="38" cy="41" r="2" fill="#F2A08A"></circle><path d="M18 60 q2 10 6 10 M42 60 q-2 10 -6 10" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><rect x="20" y="62" width="22" height="20" rx="2" fill="#C9472B"></rect><rect x="29" y="62" width="4" height="20" fill="#F2B04A"></rect><path d="M31 62 c-6 -7 -12 -3 -8 0z M31 62 c6 -7 12 -3 8 0z" fill="#F2B04A"></path><rect x="18" y="47" width="24" height="6" rx="3" fill="#FFF4E2"></rect><rect x="33" y="48" width="6" height="14" rx="2" fill="#FFF4E2"></rect></symbol>
+<symbol id="snowman" viewBox="0 0 90 130"><circle cx="45" cy="95" r="32" fill="#FFFFFF" stroke="#EBD3BC" stroke-width="3"></circle><circle cx="45" cy="45" r="22" fill="#FFFFFF" stroke="#EBD3BC" stroke-width="3"></circle><rect x="28" y="10" width="34" height="8" rx="2" fill="#3B1F14"></rect><rect x="34" y="-6" width="22" height="20" rx="2" fill="#3B1F14"></rect><rect x="34" y="8" width="22" height="4" fill="#C9472B"></rect><circle cx="38" cy="42" r="2.5" fill="#3B1F14"></circle><circle cx="52" cy="42" r="2.5" fill="#3B1F14"></circle><path d="M45 48 l14 4 l-14 2z" fill="#E8862F"></path><path d="M24 64 q21 10 42 0 v8 q-21 10 -42 0z" fill="#C9472B"></path><rect x="54" y="68" width="8" height="22" rx="3" fill="#C9472B"></rect><circle cx="45" cy="88" r="3" fill="#3B1F14"></circle><circle cx="45" cy="102" r="3" fill="#3B1F14"></circle><path d="M14 80 l-14 -14 M76 80 l14 -14" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path></symbol>
+<symbol id="snowman-body" viewBox="0 0 90 130"><circle cx="45" cy="95" r="32" fill="#FFFFFF" stroke="#EBD3BC" stroke-width="3"></circle><circle cx="45" cy="45" r="22" fill="#FFFFFF" stroke="#EBD3BC" stroke-width="3"></circle><circle cx="38" cy="42" r="2.5" fill="#3B1F14"></circle><circle cx="52" cy="42" r="2.5" fill="#3B1F14"></circle><path d="M45 48 l14 4 l-14 2z" fill="#E8862F"></path><path d="M24 64 q21 10 42 0 v8 q-21 10 -42 0z" fill="#C9472B"></path><rect x="54" y="68" width="8" height="22" rx="3" fill="#C9472B"></rect><circle cx="45" cy="88" r="3" fill="#3B1F14"></circle><circle cx="45" cy="102" r="3" fill="#3B1F14"></circle><path d="M14 80 l-14 -14 M76 80 l14 -14" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path></symbol>
+<symbol id="logo" viewBox="0 0 960 175"><path fill-rule="evenodd" style="fill:var(--logo-n,#EE1C25)" d="M121.50 138.84 L119.00 138.96 L115.33 138.72 L113.67 138.10 L111.83 137.70 L109.83 136.71 L109.10 136.17 L108.04 135.67 L105.33 133.47 L103.00 130.71 L101.07 127.50 L100.00 124.44 L99.22 119.00 L99.21 70.00 L98.67 63.17 L98.15 62.00 L97.70 60.00 L97.17 58.81 L96.76 57.33 L96.15 56.50 L95.67 55.33 L95.15 54.67 L94.67 53.50 L93.76 52.17 L90.50 48.25 L86.67 45.07 L85.36 44.17 L84.17 43.67 L81.67 42.16 L78.83 41.12 L77.00 40.72 L75.67 40.15 L74.67 40.01 L69.33 39.64 L63.67 40.06 L61.83 40.72 L60.00 41.13 L57.17 42.16 L54.67 43.68 L53.50 44.15 L52.28 45.00 L48.25 48.33 L45.00 52.28 L44.17 53.50 L42.69 56.50 L42.08 57.33 L41.09 60.17 L40.73 61.83 L40.13 63.33 L39.64 69.50 L39.59 119.50 L38.69 125.00 L37.77 127.50 L37.17 128.33 L36.68 129.50 L35.75 130.83 L33.48 133.50 L30.80 135.67 L27.17 137.64 L25.17 138.11 L23.50 138.72 L19.50 138.96 L15.67 138.65 L14.17 138.06 L12.50 137.71 L10.50 136.73 L9.74 136.17 L8.66 135.67 L6.18 133.67 L5.17 132.64 L3.20 130.17 L1.17 126.24 L0.67 124.00 L0.33 123.45 L0.00 123.33 L-0.03 122.67 L-0.03 62.50 L0.00 61.65 L0.33 61.47 L0.67 60.43 L1.19 55.83 L1.72 54.17 L2.12 52.00 L2.71 50.33 L3.06 48.50 L3.70 47.17 L4.16 45.50 L4.74 44.33 L5.12 42.83 L5.73 41.83 L6.12 40.67 L6.69 39.83 L7.17 38.52 L7.67 37.81 L8.15 36.50 L9.67 34.17 L10.14 33.17 L10.70 32.50 L11.16 31.50 L15.17 26.02 L20.19 20.33 L24.84 16.17 L27.33 14.15 L31.50 11.16 L32.50 10.70 L33.17 10.15 L34.17 9.68 L36.50 8.15 L37.82 7.67 L38.67 7.09 L39.83 6.70 L40.67 6.13 L41.83 5.73 L42.83 5.13 L44.50 4.68 L45.51 4.17 L47.17 3.71 L48.50 3.07 L50.33 2.72 L52.00 2.13 L54.17 1.73 L55.83 1.20 L60.83 0.59 L61.52 0.33 L61.69 0.00 L77.16 0.00 L77.34 0.33 L78.00 0.58 L83.00 1.20 L84.67 1.73 L86.83 2.13 L88.50 2.72 L90.50 3.12 L91.57 3.67 L93.17 4.10 L94.33 4.68 L96.00 5.12 L97.00 5.73 L98.17 6.13 L99.00 6.69 L100.32 7.17 L101.03 7.67 L102.33 8.14 L108.67 12.05 L113.83 16.02 L118.65 20.33 L122.68 24.83 L124.69 27.33 L127.68 31.50 L128.14 32.50 L128.70 33.17 L129.17 34.16 L130.70 36.50 L131.17 37.79 L131.67 38.51 L132.15 39.83 L132.71 40.67 L133.11 41.83 L133.67 42.71 L134.10 44.33 L134.68 45.50 L135.13 47.17 L135.78 48.50 L136.09 50.17 L136.71 52.00 L137.07 54.00 L137.71 56.17 L138.09 59.67 L138.66 62.67 L138.92 69.17 L138.92 119.33 L138.62 122.83 L138.05 124.50 L137.70 126.17 L135.67 130.13 L133.67 132.64 L132.66 133.67 L130.18 135.67 L129.10 136.17 L128.33 136.73 L126.17 137.77 L124.67 138.06 L123.17 138.65 L121.50 138.84Z"></path><path fill-rule="evenodd" style="fill:var(--logo-rest,#111111)" d="M273.67 138.84 L271.17 138.97 L267.33 138.69 L265.83 138.10 L263.95 137.67 L260.33 135.77 L257.62 133.50 L255.10 130.67 L253.07 127.17 L252.70 125.67 L251.99 123.83 L251.48 119.00 L251.47 70.17 L250.75 63.00 L250.17 61.61 L249.71 59.67 L248.82 57.33 L248.14 56.33 L247.67 55.19 L247.14 54.50 L246.75 53.50 L242.50 48.26 L238.51 45.00 L237.17 44.15 L236.00 43.67 L235.33 43.16 L234.17 42.67 L233.50 42.16 L227.50 40.30 L224.91 40.00 L221.17 39.83 L216.17 40.21 L212.83 41.11 L211.50 41.67 L209.83 42.10 L207.17 43.68 L206.00 44.16 L204.43 45.17 L200.90 48.17 L197.12 52.50 L194.04 58.00 L193.69 59.50 L193.11 60.83 L192.18 64.50 L191.82 69.50 L192.02 73.83 L192.76 76.67 L193.12 78.67 L193.74 79.83 L194.10 81.17 L195.10 83.33 L195.74 84.17 L196.17 85.13 L197.12 86.67 L200.33 90.48 L204.06 93.67 L207.17 95.71 L211.67 97.72 L213.67 98.10 L215.83 98.82 L219.83 99.15 L223.17 99.74 L226.33 100.09 L231.33 102.06 L235.54 105.17 L238.68 109.17 L239.17 110.61 L239.74 111.67 L240.11 113.00 L240.68 114.00 L240.90 114.83 L241.38 119.33 L240.83 124.00 L240.67 124.67 L240.11 125.67 L239.70 127.00 L239.17 127.83 L238.72 129.17 L235.67 133.02 L233.76 134.67 L230.83 136.76 L229.67 137.12 L228.33 137.82 L224.00 138.83 L216.67 138.87 L215.17 138.74 L211.83 138.12 L207.58 137.67 L206.00 137.10 L204.00 136.71 L202.33 136.10 L200.00 135.60 L197.50 134.71 L196.50 134.14 L195.00 133.68 L194.17 133.16 L192.83 132.77 L191.79 132.17 L190.50 131.73 L189.67 131.10 L188.67 130.67 L188.00 130.15 L187.00 129.72 L186.29 129.17 L183.47 127.67 L176.87 122.67 L171.41 117.50 L170.24 116.33 L165.12 110.00 L160.17 102.14 L159.72 100.83 L159.16 100.00 L158.71 98.67 L158.17 97.83 L157.72 96.50 L157.10 95.50 L156.17 93.00 L155.70 91.00 L155.17 89.80 L154.71 87.83 L154.05 86.17 L153.72 83.67 L153.09 81.00 L152.57 77.17 L152.05 70.00 L152.43 63.00 L153.17 57.31 L154.10 53.00 L154.77 51.00 L155.09 49.17 L155.71 47.83 L156.16 46.17 L156.75 45.00 L157.13 43.50 L158.15 41.17 L158.71 40.33 L159.11 39.17 L159.75 38.17 L160.16 37.00 L164.10 30.50 L168.15 25.17 L172.17 20.83 L177.17 16.15 L182.42 12.17 L189.00 8.17 L190.17 7.76 L191.17 7.12 L192.33 6.71 L193.17 6.16 L194.55 5.67 L195.50 5.15 L197.00 4.75 L198.17 4.17 L199.83 3.71 L201.17 3.10 L203.17 2.73 L205.00 2.10 L208.83 1.27 L213.85 0.67 L215.65 0.33 L216.17 0.00 L221.17 -0.06 L227.02 0.00 L227.11 0.17 L227.59 0.33 L229.35 0.67 L233.83 1.17 L238.17 2.10 L240.17 2.77 L242.00 3.09 L243.33 3.70 L245.00 4.15 L246.00 4.69 L247.77 5.17 L248.83 5.75 L250.00 6.14 L250.83 6.71 L252.00 7.11 L252.83 7.68 L254.17 8.15 L260.67 12.10 L265.83 16.04 L270.64 20.33 L275.67 25.97 L278.69 30.00 L279.67 31.36 L280.11 32.33 L280.76 33.17 L282.14 35.67 L282.69 36.33 L284.16 39.67 L284.72 40.50 L285.13 41.67 L285.75 42.67 L286.09 44.00 L286.73 45.33 L287.12 46.83 L287.73 48.00 L288.17 49.96 L288.76 51.67 L289.12 53.67 L289.74 55.50 L290.11 58.83 L290.75 62.00 L291.04 69.83 L291.02 119.33 L290.73 123.33 L290.11 124.83 L289.69 126.67 L287.73 130.33 L285.67 132.80 L282.39 135.67 L281.33 136.13 L280.50 136.74 L278.33 137.76 L276.67 138.12 L275.33 138.67 L273.67 138.84ZM325.83 173.35 L324.33 173.40 L319.50 172.70 L318.26 172.17 L316.83 171.78 L315.83 171.10 L314.83 170.71 L313.33 169.75 L312.06 168.67 L310.95 167.67 L309.17 165.67 L308.17 164.33 L307.68 163.17 L307.08 162.33 L306.06 159.83 L305.41 157.17 L305.14 155.17 L305.00 153.00 L305.00 70.33 L305.13 66.83 L305.40 62.83 L306.08 57.67 L307.07 53.00 L307.74 51.00 L308.16 48.83 L308.68 47.83 L309.12 46.17 L309.72 45.00 L310.10 43.50 L311.12 41.17 L311.68 40.33 L313.17 36.94 L317.17 30.37 L321.13 25.17 L325.83 20.14 L330.17 16.14 L335.39 12.17 L342.00 8.16 L343.17 7.75 L344.06 7.17 L345.33 6.71 L346.17 6.15 L348.50 5.13 L350.00 4.74 L351.14 4.17 L352.83 3.71 L354.00 3.14 L356.17 2.73 L358.00 2.10 L362.50 1.14 L368.73 0.33 L369.25 0.00 L379.33 -0.01 L379.87 0.00 L379.95 0.17 L380.41 0.33 L382.30 0.67 L386.78 1.17 L391.17 2.10 L393.00 2.73 L395.17 3.15 L396.33 3.71 L397.83 4.10 L398.91 4.67 L400.67 5.14 L401.67 5.69 L402.83 6.08 L403.83 6.73 L405.09 7.17 L405.83 7.69 L407.16 8.17 L413.67 12.12 L418.83 16.07 L423.50 20.24 L424.53 21.33 L428.67 26.02 L432.72 31.50 L433.17 32.49 L433.67 33.07 L435.10 35.67 L435.74 36.50 L436.16 37.67 L436.72 38.50 L437.13 39.67 L437.69 40.50 L438.17 41.82 L438.72 42.67 L440.15 47.00 L440.69 48.00 L441.14 50.00 L441.73 51.67 L442.13 53.83 L442.70 55.50 L443.13 59.17 L443.76 62.33 L444.00 69.50 L443.73 77.00 L443.09 80.00 L442.68 83.17 L441.72 87.50 L441.14 88.83 L440.67 90.83 L440.15 92.00 L439.67 94.06 L439.12 95.00 L438.68 96.33 L438.13 97.17 L437.68 98.50 L437.14 99.33 L436.69 100.67 L436.15 101.50 L435.70 102.67 L435.15 103.33 L434.67 104.33 L433.17 106.54 L432.71 107.50 L432.15 108.17 L431.66 109.17 L425.64 116.67 L419.50 122.56 L415.39 125.67 L412.50 127.79 L409.88 129.17 L409.17 129.72 L408.17 130.15 L407.50 130.68 L406.50 131.10 L405.67 131.73 L404.50 132.12 L403.33 132.76 L402.00 133.16 L401.00 133.74 L399.67 134.13 L398.67 134.72 L395.83 135.71 L393.83 136.10 L392.17 136.71 L390.17 137.11 L388.50 137.68 L384.33 138.12 L380.83 138.77 L379.17 138.87 L371.83 138.79 L367.83 137.82 L366.62 137.17 L365.17 136.67 L361.10 133.67 L359.17 131.45 L357.13 128.50 L355.44 124.17 L355.07 122.17 L354.84 119.50 L355.07 115.50 L357.23 109.67 L358.17 108.24 L360.67 105.27 L363.27 103.17 L365.00 102.01 L369.83 100.10 L373.00 99.74 L376.22 99.17 L380.33 98.82 L382.50 98.10 L384.65 97.67 L387.00 96.68 L387.83 96.12 L389.10 95.67 L393.50 92.63 L396.63 89.67 L398.67 87.13 L399.69 85.67 L401.67 82.17 L402.10 80.67 L402.79 79.33 L403.75 75.83 L404.40 69.33 L403.73 63.00 L403.15 61.67 L402.74 59.83 L401.80 57.33 L401.12 56.33 L400.67 55.23 L400.12 54.50 L399.67 53.40 L395.50 48.28 L391.50 45.00 L390.17 44.16 L389.00 43.68 L388.33 43.17 L387.17 42.69 L386.48 42.17 L384.67 41.68 L383.33 41.11 L379.83 40.18 L374.50 39.81 L370.00 40.11 L368.67 40.30 L362.83 42.08 L357.50 45.09 L353.19 48.83 L350.09 52.50 L347.08 57.83 L346.71 59.33 L346.09 60.83 L345.17 64.33 L344.79 70.17 L344.79 153.17 L344.37 157.00 L343.76 159.67 L342.78 162.17 L342.17 163.03 L341.60 164.33 L338.83 167.67 L336.50 169.71 L333.00 171.76 L330.33 172.68 L325.83 173.35ZM918.67 174.83 L914.41 174.83 L914.13 174.50 L913.56 174.33 L909.00 173.85 L907.17 173.14 L905.22 172.67 L903.00 171.75 L902.25 171.17 L901.17 170.67 L900.57 170.17 L899.50 169.68 L898.17 168.76 L895.00 165.72 L893.17 163.76 L891.67 161.37 L890.06 159.17 L889.67 158.11 L889.11 157.17 L888.71 155.83 L888.12 154.83 L887.72 153.50 L887.08 152.33 L886.72 150.33 L886.08 148.17 L885.71 145.83 L885.23 144.33 L885.09 143.17 L884.69 135.00 L885.12 126.33 L887.13 117.33 L887.71 116.33 L888.11 115.00 L888.72 114.00 L889.12 112.67 L889.67 111.79 L890.17 110.43 L894.00 105.09 L898.17 101.09 L899.50 100.10 L900.50 99.67 L903.00 98.06 L904.83 97.18 L906.83 96.71 L908.33 96.06 L910.67 95.60 L915.83 94.97 L919.83 95.22 L924.00 96.11 L926.66 97.17 L928.50 98.08 L931.50 100.28 L935.53 104.67 L937.87 108.67 L938.17 108.89 L938.67 108.86 L938.87 108.67 L938.99 108.17 L938.88 107.00 L938.91 71.67 L939.11 70.33 L939.33 70.13 L939.83 70.04 L959.83 70.10 L959.83 173.48 L940.67 173.49 L939.63 173.33 L939.21 172.83 L939.09 172.17 L939.11 162.00 L938.88 161.33 L938.50 161.14 L938.07 161.33 L937.30 162.33 L935.68 165.17 L934.67 166.50 L930.22 170.67 L929.20 171.17 L928.50 171.74 L926.67 172.63 L925.17 173.09 L924.17 173.59 L919.14 174.50 L918.67 174.83ZM514.33 173.50 L495.67 173.51 L494.83 173.31 L494.33 172.65 L494.36 96.67 L494.83 96.20 L495.67 96.05 L513.83 96.06 L514.50 96.22 L514.72 96.50 L514.83 97.17 L514.77 108.50 L514.95 109.17 L515.33 109.48 L515.83 109.12 L517.06 105.67 L519.17 102.27 L520.17 101.06 L522.17 99.12 L525.17 97.08 L527.74 96.00 L533.75 95.00 L536.50 95.08 L540.33 95.51 L540.83 95.95 L541.01 96.67 L541.00 113.17 L540.73 114.17 L540.17 114.38 L538.94 114.00 L531.83 113.37 L526.83 114.06 L524.17 115.08 L522.21 116.17 L520.17 117.92 L519.15 119.00 L518.16 120.17 L517.67 121.22 L517.17 121.87 L516.17 124.31 L515.32 129.83 L515.34 172.17 L515.00 173.15 L514.33 173.50ZM590.83 174.84 L578.64 174.83 L578.33 174.50 L577.83 174.37 L573.96 173.83 L571.83 173.11 L569.64 172.67 L567.00 171.72 L566.17 171.14 L565.00 170.70 L564.17 170.11 L563.17 169.76 L562.31 169.17 L561.33 168.76 L556.18 164.50 L552.17 159.46 L551.19 158.00 L550.71 156.67 L550.14 155.83 L549.75 154.67 L549.17 153.77 L548.72 152.50 L548.10 151.33 L547.74 149.33 L547.16 147.67 L546.75 145.50 L546.22 143.83 L545.64 135.33 L546.21 126.83 L546.74 125.17 L547.15 123.00 L547.74 121.33 L548.16 119.17 L549.17 116.85 L549.73 116.00 L550.11 114.83 L550.68 114.00 L551.17 112.62 L554.17 108.40 L556.00 106.15 L559.29 103.17 L561.67 101.25 L562.93 100.67 L563.67 100.12 L564.67 99.72 L565.50 99.11 L566.50 98.72 L567.50 98.04 L568.98 97.67 L570.33 97.10 L572.17 96.71 L574.06 96.00 L580.45 95.17 L583.17 94.96 L586.29 95.17 L590.17 95.65 L592.50 96.07 L594.33 96.72 L596.67 97.22 L598.83 98.11 L599.67 98.69 L600.83 99.11 L601.67 99.69 L603.00 100.21 L604.40 101.17 L608.67 104.72 L611.67 108.23 L613.67 110.98 L614.10 112.17 L614.67 113.00 L615.08 114.17 L615.67 115.03 L616.15 116.33 L616.72 117.33 L617.10 119.33 L617.69 121.00 L618.11 123.17 L618.72 125.00 L619.41 134.50 L619.47 139.00 L619.29 139.67 L618.67 140.07 L567.83 140.09 L567.28 140.17 L566.88 140.50 L566.75 141.50 L566.93 144.50 L567.14 145.67 L568.09 148.83 L568.72 149.83 L569.17 151.08 L570.14 152.50 L572.07 154.67 L574.61 156.67 L575.83 157.15 L576.67 157.74 L578.33 158.14 L580.00 158.76 L584.33 159.06 L588.00 158.81 L589.33 158.62 L590.50 158.07 L591.83 157.72 L593.83 156.74 L596.50 154.71 L598.21 152.17 L599.33 151.66 L617.67 151.64 L618.17 151.70 L618.50 151.94 L618.60 152.67 L618.08 153.67 L617.62 155.67 L616.77 157.67 L616.16 158.50 L615.69 159.67 L615.17 160.35 L614.72 161.33 L611.67 164.93 L608.59 167.67 L607.17 168.75 L604.50 170.13 L603.67 170.75 L601.73 171.67 L600.00 172.12 L598.83 172.72 L595.83 173.57 L591.83 174.22 L591.15 174.50 L590.83 174.84ZM777.67 174.84 L768.06 174.83 L767.93 174.50 L767.24 174.17 L764.00 173.63 L759.17 171.67 L756.15 169.67 L753.07 166.67 L752.08 165.50 L751.67 164.56 L750.07 162.00 L749.70 160.50 L749.09 159.00 L748.75 157.33 L748.09 151.67 L749.06 144.83 L749.69 143.50 L750.18 141.67 L751.13 140.00 L753.17 137.11 L756.50 134.08 L757.87 133.17 L759.00 132.68 L759.67 132.17 L760.83 131.68 L761.67 131.13 L763.33 130.70 L764.83 130.03 L768.17 129.14 L774.05 128.17 L795.00 127.08 L795.67 126.90 L796.00 126.17 L795.93 120.67 L795.67 118.74 L794.92 116.17 L792.67 113.17 L791.58 112.67 L790.83 112.13 L788.50 111.07 L783.67 110.53 L778.83 111.07 L777.67 111.71 L776.33 112.15 L774.92 113.00 L772.33 115.67 L771.09 118.50 L770.67 118.99 L770.33 119.14 L751.50 119.14 L751.05 118.83 L750.90 118.33 L751.24 116.33 L752.07 113.17 L752.73 112.00 L753.11 110.67 L754.05 109.00 L756.17 106.01 L760.17 102.12 L765.00 99.07 L766.31 98.67 L767.33 98.11 L768.83 97.68 L770.17 97.00 L774.17 96.05 L779.67 95.25 L784.00 94.96 L787.00 95.07 L790.17 95.32 L795.02 96.17 L798.33 97.08 L799.67 97.71 L801.33 98.13 L803.33 99.10 L804.17 99.71 L805.17 100.12 L806.89 101.17 L810.50 104.21 L811.65 105.50 L812.17 106.42 L813.67 108.35 L814.59 110.00 L815.13 111.83 L815.79 113.17 L816.65 117.17 L816.98 121.50 L816.95 172.67 L816.67 173.31 L816.17 173.55 L798.67 173.49 L797.67 173.37 L797.27 173.00 L797.08 172.17 L797.16 163.50 L796.92 163.00 L796.50 162.82 L796.00 163.07 L792.81 167.67 L790.45 169.67 L787.75 171.67 L786.20 172.17 L785.17 172.73 L783.83 173.10 L782.50 173.79 L778.55 174.33 L777.67 174.84ZM853.33 173.51 L834.00 173.50 L833.42 173.33 L833.10 172.83 L833.01 97.83 L833.12 96.50 L833.44 96.17 L834.00 96.06 L852.17 96.05 L853.17 96.27 L853.49 96.67 L853.56 97.17 L853.54 108.33 L853.74 109.00 L854.17 109.24 L854.50 109.15 L854.75 108.83 L855.17 107.30 L856.08 105.17 L856.71 104.33 L857.12 103.33 L858.17 102.00 L859.17 100.83 L861.00 99.09 L863.83 97.13 L866.46 96.00 L872.33 95.02 L875.33 95.09 L879.17 95.57 L879.67 95.94 L879.86 96.67 L879.85 113.17 L879.60 114.17 L879.17 114.38 L878.00 114.06 L875.50 113.74 L870.67 113.36 L867.50 113.72 L864.83 114.29 L862.83 115.11 L861.17 116.05 L858.49 118.33 L857.07 120.00 L856.17 121.41 L855.09 123.67 L854.34 126.83 L854.04 129.50 L854.05 172.17 L853.83 173.11 L853.33 173.51ZM719.33 173.50 L698.67 173.53 L698.09 173.33 L697.50 172.72 L697.15 172.00 L696.71 169.83 L696.13 168.33 L694.70 162.67 L694.07 161.00 L693.72 159.17 L693.17 157.73 L692.74 155.67 L692.07 153.83 L691.71 152.00 L691.17 150.59 L690.73 148.50 L690.11 146.83 L689.75 145.00 L689.08 143.17 L688.73 141.33 L688.10 139.67 L687.70 137.67 L687.12 136.17 L686.72 134.17 L686.10 132.50 L684.71 127.00 L684.00 125.00 L683.50 124.52 L683.17 124.62 L682.91 125.00 L682.13 127.50 L680.74 133.17 L680.08 135.00 L679.73 136.83 L679.12 138.50 L678.73 140.50 L678.07 142.33 L677.72 144.17 L677.11 145.83 L676.72 147.83 L676.10 149.50 L675.71 151.50 L675.10 153.17 L674.76 155.00 L674.14 156.67 L673.70 158.83 L673.14 160.33 L672.74 162.33 L672.13 164.00 L671.74 166.00 L671.13 167.67 L670.74 169.67 L669.67 173.06 L669.17 173.41 L668.17 173.49 L648.67 173.51 L647.50 173.09 L647.04 172.33 L646.74 170.67 L646.12 169.00 L645.73 167.00 L645.11 165.33 L643.70 159.67 L643.09 158.00 L642.74 156.17 L642.13 154.50 L641.73 152.50 L641.11 150.83 L640.72 148.83 L640.10 147.17 L639.71 145.17 L639.17 143.75 L638.74 141.67 L638.08 139.83 L637.74 138.00 L637.12 136.33 L636.67 134.17 L636.11 132.67 L635.71 130.67 L635.09 129.00 L634.75 127.17 L634.09 125.33 L633.67 123.27 L633.12 121.83 L632.73 119.83 L632.11 118.17 L631.72 116.17 L631.15 114.67 L630.70 112.50 L630.09 110.83 L629.74 109.00 L629.08 107.17 L628.68 105.17 L628.11 103.67 L627.72 101.67 L627.10 100.00 L626.76 98.17 L626.29 96.83 L626.41 96.33 L626.83 96.12 L627.50 96.07 L646.17 96.05 L647.00 96.20 L647.50 96.59 L647.78 97.33 L648.14 99.50 L648.73 101.33 L649.12 103.67 L649.75 105.67 L650.14 108.00 L650.73 109.83 L651.12 112.17 L651.74 114.17 L652.10 116.33 L652.76 118.50 L653.12 120.67 L653.74 122.67 L654.13 125.00 L654.72 126.83 L655.11 129.17 L655.73 131.17 L656.13 133.50 L656.75 135.50 L657.10 137.67 L657.73 139.67 L658.08 141.83 L658.71 143.83 L659.13 146.17 L659.63 147.67 L660.00 148.03 L660.33 148.12 L660.67 147.93 L660.87 147.50 L661.09 145.83 L661.74 143.83 L662.10 141.67 L662.69 139.83 L663.10 137.50 L663.69 135.67 L664.11 133.33 L664.77 131.17 L665.11 129.17 L665.74 127.17 L666.11 125.00 L666.74 123.00 L667.11 120.83 L667.74 118.83 L668.07 116.83 L668.74 114.67 L669.07 112.67 L669.70 110.67 L671.11 104.17 L671.75 102.17 L672.11 100.00 L673.01 96.67 L673.33 96.20 L674.00 96.05 L693.00 96.03 L693.67 96.16 L694.04 96.50 L694.72 98.17 L695.10 100.33 L695.71 102.17 L696.09 104.33 L696.74 106.33 L697.17 108.65 L697.73 110.33 L698.11 112.50 L698.72 114.33 L699.10 116.50 L699.75 118.50 L700.09 120.50 L700.74 122.50 L701.17 124.83 L701.73 126.50 L702.11 128.67 L702.72 130.50 L703.10 132.67 L703.75 134.67 L704.09 136.67 L704.74 138.67 L705.08 140.67 L705.73 142.67 L706.12 144.83 L706.84 147.33 L707.33 147.84 L707.67 147.75 L707.91 147.33 L708.07 145.67 L708.74 143.33 L709.12 141.00 L709.74 139.00 L710.08 136.83 L710.70 134.83 L711.08 132.50 L711.77 130.17 L712.12 128.00 L712.73 126.00 L713.07 123.83 L713.73 121.67 L714.07 119.50 L714.73 117.33 L715.15 114.83 L715.73 113.00 L716.07 110.83 L716.72 108.67 L717.15 106.17 L717.72 104.33 L718.11 102.00 L718.72 100.00 L719.10 97.67 L719.49 96.67 L720.00 96.20 L720.67 96.04 L739.83 96.05 L740.50 96.22 L740.68 96.50 L740.67 97.07 L740.09 98.67 L739.67 100.77 L739.09 102.33 L738.70 104.33 L738.09 106.00 L737.75 107.83 L737.10 109.67 L736.75 111.50 L736.10 113.33 L735.71 115.33 L735.10 117.00 L734.72 119.00 L734.11 120.67 L732.72 126.33 L732.11 128.00 L731.77 129.83 L731.12 131.67 L730.73 133.67 L730.12 135.33 L729.73 137.33 L729.12 139.00 L728.74 141.00 L728.12 142.67 L726.74 148.33 L726.13 150.00 L725.75 152.00 L725.09 153.83 L723.70 159.50 L723.14 161.00 L722.71 163.17 L722.10 164.83 L721.76 166.67 L721.10 168.50 L720.71 170.50 L719.83 172.99 L719.33 173.50ZM598.50 127.00 L599.33 126.72 L599.57 126.17 L598.76 121.83 L597.68 119.17 L596.72 117.50 L595.65 116.17 L593.50 114.10 L592.22 113.17 L591.17 112.75 L590.17 112.07 L588.67 111.71 L587.00 111.07 L583.67 110.83 L580.00 111.06 L578.17 111.74 L576.67 112.08 L575.67 112.74 L574.57 113.17 L572.00 115.15 L570.17 117.10 L569.23 118.33 L568.73 119.50 L568.12 120.33 L567.67 121.93 L567.06 123.33 L566.71 126.17 L567.00 126.82 L567.67 127.04 L598.50 127.00ZM924.52 157.83 L926.33 157.59 L927.50 157.07 L928.94 156.67 L930.50 155.78 L931.99 154.67 L934.78 151.67 L935.72 150.17 L936.17 149.06 L936.71 148.33 L937.11 146.83 L937.77 145.33 L938.83 140.38 L939.09 134.67 L938.91 129.83 L938.68 128.00 L937.81 124.17 L937.14 122.67 L936.80 121.33 L936.13 120.33 L935.67 119.24 L933.50 116.39 L932.33 115.20 L929.00 113.11 L926.00 112.17 L922.17 111.94 L919.17 112.28 L916.67 113.10 L914.95 114.00 L913.25 115.17 L912.19 116.17 L910.17 118.59 L908.17 122.55 L907.72 124.33 L907.16 125.67 L906.43 130.50 L906.17 135.33 L906.48 139.17 L907.19 143.83 L907.73 145.17 L908.17 146.95 L909.08 149.00 L909.68 149.83 L910.17 150.94 L911.17 152.27 L913.33 154.58 L915.00 155.76 L916.67 156.68 L919.83 157.70 L922.50 157.93 L924.52 157.83ZM780.74 160.17 L784.33 159.80 L787.65 158.67 L788.38 158.17 L789.50 157.70 L790.83 156.67 L793.68 153.67 L794.82 151.67 L795.82 148.50 L795.97 141.50 L795.87 140.67 L795.67 140.31 L795.00 140.12 L788.50 140.69 L780.50 141.01 L777.50 141.74 L775.50 142.04 L773.33 143.14 L771.50 144.32 L769.17 147.23 L768.33 151.00 L768.34 151.67 L769.17 155.17 L771.17 157.64 L772.74 158.67 L774.00 159.12 L775.17 159.77 L779.50 160.23 L780.74 160.17Z"></path></symbol>
+<symbol id="xtree" viewBox="0 0 90 136"><path d="M45 14 L68 48 H58 L78 80 H64 L88 114 H2 L26 80 H12 L32 48 H22z" fill="#2F5D3A"></path><path d="M32 48 h26 l-4 6 h-18z M26 80 h38 l-4 6 h-30z M2 114 h86 l-6 5 h-74z" fill="#FFF4E2"></path><path d="M31 62 Q45 72 61 60 M20 96 Q45 108 72 94" fill="none" stroke="#F2B04A" stroke-width="2.5"></path><circle cx="38" cy="67" r="4" fill="#C9472B"></circle><circle cx="56" cy="65" r="4" fill="#F2B04A"></circle><circle cx="29" cy="99" r="4.5" fill="#E8862F"></circle><circle cx="49" cy="103" r="4.5" fill="#C9472B"></circle><circle cx="67" cy="97" r="4.5" fill="#FFF4E2"></circle><circle cx="45" cy="42" r="3" fill="#C9472B"></circle><polygon points="45,0 48,8 56,8 50,13 52,21 45,16 38,21 40,13 34,8 42,8" fill="#F2B04A"></polygon><rect x="40" y="119" width="10" height="16" fill="#6B3A22"></rect></symbol>
+<symbol id="kid2" viewBox="0 0 60 120"><path d="M22 92 v22 h7 v-22z M33 92 v22 h7 v-22z" fill="#3B1F14"></path><path d="M20 58 q-6 10 -4 20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><path d="M40 56 q8 -10 6 -22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><path d="M18 50 Q30 44 42 50 L46 94 H14z" fill="currentColor"></path><circle cx="30" cy="34" r="13" fill="#F6D2B0"></circle><path d="M17 32 a13 13 0 0 1 26 0z"></path><rect x="16" y="29" width="28" height="5" rx="2.5" fill="#FFF4E2"></rect><circle cx="30" cy="17" r="4" fill="#FFF4E2"></circle><circle cx="25" cy="37" r="1.6" fill="#3B1F14"></circle><circle cx="35" cy="37" r="1.6" fill="#3B1F14"></circle><circle cx="30" cy="43" r="1.8" fill="#3B1F14"></circle><circle cx="22" cy="40" r="2" fill="#F2A08A"></circle><circle cx="38" cy="40" r="2" fill="#F2A08A"></circle><rect x="18" y="47" width="24" height="6" rx="3" fill="#FFF4E2"></rect><rect x="21" y="48" width="6" height="14" rx="2" fill="#FFF4E2"></rect></symbol>
+<symbol id="sledkid" viewBox="0 -16 112 96"><path d="M6 68 h82 q14 0 16 -12" fill="none" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path><path d="M24 58 v10 M70 58 v10" stroke="#6B3A22" stroke-width="4"></path><rect x="12" y="50" width="76" height="10" rx="3" fill="#C9472B"></rect><path d="M90 56 q-12 -14 -32 -24" fill="none" stroke="#6B3A22" stroke-width="2"></path><rect x="54" y="42" width="26" height="9" rx="4.5" fill="#3B1F14"></rect><path d="M34 24 Q46 18 58 24 L62 52 H30z" fill="currentColor"></path><path d="M54 30 q8 4 12 8" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><path d="M36 22 q-14 -2 -24 6" fill="none" stroke="#FFF4E2" stroke-width="5" stroke-linecap="round"></path><circle cx="46" cy="10" r="11" fill="#F6D2B0"></circle><path d="M35 8 a11 11 0 0 1 22 0z"></path><rect x="34" y="5" width="24" height="4" rx="2" fill="#FFF4E2"></rect><circle cx="46" cy="-4" r="3.5" fill="#FFF4E2"></circle><circle cx="42" cy="12" r="1.4" fill="#3B1F14"></circle><circle cx="50" cy="12" r="1.4" fill="#3B1F14"></circle><path d="M43 16 q3 3 6 0" fill="none" stroke="#3B1F14" stroke-width="1.4" stroke-linecap="round"></path><rect x="36" y="20" width="22" height="5" rx="2.5" fill="#FFF4E2"></rect></symbol>
+<symbol id="buddy" viewBox="-16 -20 132 142"><path d="M8 30 q-16 4 -14 22" fill="none" stroke="#3B1F14" stroke-width="5" stroke-linecap="round"></path><circle cx="-6" cy="54" r="7" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></circle><path d="M92 40 q14 -6 16 -22" fill="none" stroke="#3B1F14" stroke-width="5" stroke-linecap="round"></path><circle cx="108" cy="16" r="7" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></circle><rect x="14" y="16" width="84" height="104" rx="20" fill="#B8391F"></rect><rect x="8" y="10" width="84" height="104" rx="20" fill="#F2B04A" stroke="#3B1F14" stroke-width="4"></rect><rect x="18" y="22" width="64" height="34" rx="9" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3.5"></rect><circle cx="38" cy="38" r="4.5" fill="#3B1F14"></circle><circle cx="62" cy="38" r="4.5" fill="#3B1F14"></circle><circle cx="39.5" cy="36.5" r="1.4" fill="#FFF4E2"></circle><circle cx="63.5" cy="36.5" r="1.4" fill="#FFF4E2"></circle><path d="M44 44 q6 7 12 0" fill="none" stroke="#3B1F14" stroke-width="3" stroke-linecap="round"></path><circle cx="29" cy="46" r="4" fill="#F2A08A"></circle><circle cx="71" cy="46" r="4" fill="#F2A08A"></circle><g fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"><rect x="19" y="64" width="17" height="13" rx="4"></rect><rect x="42" y="64" width="17" height="13" rx="4"></rect><rect x="19" y="82" width="17" height="13" rx="4"></rect><rect x="42" y="82" width="17" height="13" rx="4"></rect><rect x="19" y="100" width="17" height="9" rx="3"></rect><rect x="42" y="100" width="17" height="9" rx="3"></rect></g><rect x="65" y="64" width="17" height="45" rx="5" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></rect><path d="M69 82 h9 M69 88 h9" stroke="#FFF4E2" stroke-width="3" stroke-linecap="round"></path><path d="M26 12 a24 18 0 0 1 48 0z" fill="#C9472B" stroke="#3B1F14" stroke-width="3.5" stroke-linejoin="round"></path><rect x="22" y="6" width="56" height="10" rx="5" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"></rect><circle cx="50" cy="-10" r="7" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"></circle></symbol>
+<symbol id="puppy" viewBox="0 0 100 76"><path d="M18 40 q-16 -6 -12 -20 q8 4 10 14" fill="#E8A060" stroke="#6B3A22" stroke-width="2.5" stroke-linejoin="round"></path><path d="M26 54 l-10 14 M36 56 l-4 16 M64 56 l6 14 M72 52 l14 10" stroke="#E8A060" stroke-width="9" stroke-linecap="round"></path><ellipse cx="48" cy="46" rx="28" ry="15" fill="#E8A060"></ellipse><ellipse cx="50" cy="51" rx="18" ry="8" fill="#FFF1DE"></ellipse><circle cx="78" cy="28" r="16" fill="#E8A060"></circle><path d="M66 16 L64 2 L76 12z M88 14 L94 1 L96 18z" fill="#E8A060" stroke="#6B3A22" stroke-width="2" stroke-linejoin="round"></path><ellipse cx="84" cy="34" rx="9" ry="7" fill="#FFF1DE"></ellipse><circle cx="90" cy="31" r="2.8" fill="#3B1F14"></circle><circle cx="76" cy="25" r="2.2" fill="#3B1F14"></circle><circle cx="86" cy="24" r="2.2" fill="#3B1F14"></circle><path d="M84 38 q2 6 6 4" fill="#F28C8C" stroke="#6B3A22" stroke-width="1.5"></path><circle cx="71" cy="31" r="2.6" fill="#F2A08A"></circle><path d="M62 38 q16 8 30 0 l-2 7 q-13 6 -26 0z" fill="#C9472B"></path></symbol>
+<symbol id="deer" viewBox="0 0 124 100"><path d="M90 20 l-6 -16 M86 10 l-8 -4 M98 18 l6 -16 M102 8 l8 -2" fill="none" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path><path d="M34 62 l-20 12 M42 66 l-12 22 M80 64 l18 18 M86 58 l24 4" stroke="#A0673E" stroke-width="8" stroke-linecap="round"></path><path d="M14 74 l-4 2 M30 88 l-2 4 M98 82 l4 2 M110 62 l4 0" stroke="#3B1F14" stroke-width="7" stroke-linecap="round"></path><ellipse cx="60" cy="58" rx="32" ry="17" fill="#A0673E"></ellipse><ellipse cx="62" cy="64" rx="20" ry="8" fill="#F1DCC2"></ellipse><circle cx="28" cy="50" r="6" fill="#FFF4E2"></circle><circle cx="96" cy="36" r="15" fill="#A0673E"></circle><path d="M82 30 q-12 -6 -14 -14 q10 0 16 8z M108 26 q10 -6 12 -14 q-10 0 -14 8z" fill="#A0673E"></path><ellipse cx="104" cy="44" rx="9" ry="7" fill="#F1DCC2"></ellipse><circle cx="110" cy="42" r="4.5" fill="#6B3A22"></circle><circle cx="92" cy="33" r="2.4" fill="#3B1F14"></circle><circle cx="102" cy="32" r="2.4" fill="#3B1F14"></circle><circle cx="88" cy="40" r="2.8" fill="#F2A08A"></circle><path d="M80 46 q16 10 30 2 l-1 8 q-15 7 -28 -2z" fill="#2F5D3A"></path><path d="M84 52 l-6 14" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"></path></symbol>
+<symbol id="girl" viewBox="0 0 60 120"><path d="M14 34 Q14 15 30 15 Q46 15 46 34 L47 48 Q30 44 13 48z" fill="#6B3A22"></path><circle cx="11" cy="44" r="6" fill="#6B3A22"></circle><circle cx="49" cy="44" r="6" fill="#6B3A22"></circle><path d="M22 92 v22 h7 v-22z M33 92 v22 h7 v-22z" fill="#3B1F14"></path><path d="M18 50 Q30 44 42 50 L49 96 H11z" fill="currentColor"></path><circle cx="30" cy="33" r="12" fill="#F6D2B0"></circle><path d="M18 30 Q30 16 42 30 Q36 25 30 26 Q24 25 18 30z" fill="#6B3A22"></path><path d="M17 31 Q30 10 43 31" fill="none" stroke="#C9472B" stroke-width="3"></path><circle cx="17" cy="33" r="5" fill="#C9472B"></circle><circle cx="43" cy="33" r="5" fill="#C9472B"></circle><circle cx="25.5" cy="35" r="1.6" fill="#3B1F14"></circle><circle cx="34.5" cy="35" r="1.6" fill="#3B1F14"></circle><circle cx="22.5" cy="39" r="2" fill="#F2A08A"></circle><circle cx="37.5" cy="39" r="2" fill="#F2A08A"></circle><path d="M27 40 q3 2.5 6 0" fill="none" stroke="#3B1F14" stroke-width="1.4" stroke-linecap="round"></path><rect x="18" y="46" width="24" height="6" rx="3" fill="#FFF4E2"></rect><path d="M20 58 q2 10 7 12 M40 58 q-2 10 -7 12" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><rect x="24" y="64" width="13" height="12" rx="2.5" fill="#FFF4E2"></rect><path d="M37 67 h3 a3 3 0 0 1 0 6 h-3" fill="none" stroke="#FFF4E2" stroke-width="2"></path><path d="M28 61 q-2 -3 0 -6 M33 61 q-2 -3 0 -6" fill="none" stroke="#FFF4E2" stroke-width="1.5" stroke-linecap="round" opacity="0.8"></path></symbol>
+<symbol id="mitten" viewBox="0 0 40 56"><rect x="8" y="0" width="22" height="10" rx="2" fill="#FFF4E2"></rect><path d="M8 10 h22 v26 a11 11 0 0 1 -22 0z"></path><circle cx="32" cy="26" r="6"></circle><path d="M8 18 h22" stroke="#FFF4E2" stroke-width="3"></path></symbol>
+<symbol id="stocking" viewBox="0 0 44 64"><path d="M10 10 h20 v28 l10 8 a9 9 0 0 1 -6 16 h-16 a12 12 0 0 1 -8 -12z"></path><rect x="7" y="0" width="26" height="12" rx="3" fill="#FFF4E2"></rect><path d="M12 30 h18 M12 38 h18" stroke="#FFF4E2" stroke-width="2.5" stroke-dasharray="3 3"></path></symbol>
+<pattern id="pdots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.6" fill="#FFF4E2"></circle><circle cx="10.5" cy="10.5" r="2.6" fill="#FFF4E2"></circle></pattern>
+<pattern id="pstripe" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect x="0" y="0" width="5" height="12" fill="#FFF4E2" opacity="0.6"></rect></pattern>
+<symbol id="gift-dots" viewBox="0 0 80 80"><rect x="4" y="24" width="72" height="54" rx="4" fill="currentColor"></rect><rect x="4" y="24" width="72" height="54" rx="4" fill="url(#pdots)"></rect><rect x="0" y="14" width="80" height="16" rx="3" fill="currentColor"></rect><rect x="0" y="14" width="80" height="16" rx="3" fill="url(#pdots)"></rect><rect x="34" y="14" width="12" height="64" fill="#F2B04A"></rect><path d="M40 14 C28 0 14 6 24 14z M40 14 C52 0 66 6 56 14z" fill="#F2B04A"></path></symbol>
+<symbol id="gift-stripe" viewBox="0 0 80 80"><rect x="4" y="24" width="72" height="54" rx="4" fill="currentColor"></rect><rect x="4" y="24" width="72" height="54" rx="4" fill="url(#pstripe)"></rect><rect x="0" y="14" width="80" height="16" rx="3" fill="currentColor"></rect><rect x="0" y="14" width="80" height="16" rx="3" fill="url(#pstripe)"></rect><rect x="34" y="14" width="12" height="64" fill="#F2B04A"></rect><path d="M40 14 C28 0 14 6 24 14z M40 14 C52 0 66 6 56 14z" fill="#F2B04A"></path></symbol>
+<symbol id="gift" viewBox="0 0 80 80"><rect x="4" y="24" width="72" height="54" rx="4" fill="currentColor"></rect><rect x="0" y="14" width="80" height="16" rx="3" fill="currentColor"></rect><rect x="34" y="14" width="12" height="64" fill="#F2B04A"></rect><path d="M40 14 C28 0 14 6 24 14z M40 14 C52 0 66 6 56 14z" fill="#F2B04A"></path></symbol>
+</defs>
+</svg>
+
+<header class="hero">
+<svg class="hero-bg" viewBox="0 0 1280 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g fill="#FFF4E2" opacity="0.35"><circle cx="90" cy="220" r="4"></circle><circle cx="210" cy="340" r="3"></circle><circle cx="160" cy="560" r="5"></circle><circle cx="420" cy="700" r="4"></circle><circle cx="1100" cy="300" r="3"></circle><circle cx="1190" cy="520" r="5"></circle><circle cx="880" cy="760" r="3"></circle><circle cx="1030" cy="680" r="4"></circle><circle cx="60" cy="760" r="3"></circle><circle cx="1240" cy="180" r="3"></circle></g>
+<g color="#FFF4E2" opacity="0.6"><use href="#flake" x="190" y="170" width="32" height="32"></use><use href="#flake" x="1090" y="200" width="28" height="28"></use><use href="#flake" x="60" y="440" width="26" height="26"></use><use href="#flake" x="1180" y="620" width="32" height="32"></use></g>
+<use href="#maple" x="80" y="260" width="64" height="68" fill="#E8862F" transform="rotate(-20 112 294)"></use>
+<use href="#leaf" x="1140" y="380" width="56" height="56" fill="#F2B04A" transform="rotate(40 1168 408)"></use>
+<use href="#maple" x="150" y="620" width="54" height="58" fill="#C9472B" transform="rotate(15 177 649)"></use>
+<use href="#maple" x="1150" y="740" width="56" height="60" fill="#F2B04A" transform="rotate(-25 1178 770)"></use>
+<use href="#leaf" x="30" y="580" width="44" height="44" fill="#E8862F" transform="rotate(30 52 602)"></use>
+<use href="#leaf" x="1200" y="130" width="40" height="40" fill="#C9472B" transform="rotate(-60 1220 150)"></use>
+</svg>
+
+<div class="garland" aria-hidden="true"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M0 6 Q 25 46 50 8 Q 75 46 100 6" fill="none" stroke="#3B1F14" stroke-width="2.5" vector-effect="non-scaling-stroke"></path></svg><span class="bulb" style="left:4.00%;top:11.9px;--c:#F2B04A"></span><span class="bulb" style="left:12.36%;top:21.0px;--c:#E8862F"></span><span class="bulb" style="left:20.73%;top:25.8px;--c:#FFF4E2"></span><span class="bulb" style="left:29.09%;top:26.1px;--c:#C9472B"></span><span class="bulb" style="left:37.45%;top:22.1px;--c:#F2B04A"></span><span class="bulb" style="left:45.82%;top:13.8px;--c:#FFF4E2"></span><span class="bulb" style="left:54.18%;top:13.8px;--c:#E8862F"></span><span class="bulb" style="left:62.55%;top:22.1px;--c:#F2B04A"></span><span class="bulb" style="left:70.91%;top:26.1px;--c:#C9472B"></span><span class="bulb" style="left:79.27%;top:25.8px;--c:#FFF4E2"></span><span class="bulb" style="left:87.64%;top:21.0px;--c:#E8862F"></span><span class="bulb" style="left:96.00%;top:11.9px;--c:#F2B04A"></span></div>
+<div class="wrap">
+<div class="topbar">
+<div class="period"><span>2026 하반기 특별 프로모션</span><span>집행기간 ~ 2026.12.31</span></div>
+<svg class="logo-svg" viewBox="0 0 960 175" role="img" aria-label="nap reward"><use href="#logo"></use></svg>
+</div>
+<div class="headline">
+<span class="pill">광고주 · 대행사 · 렙사 모두 대상</span>
+<h1>연말정산보다<br><span>먼저 오는 혜택</span></h1>
+<p class="sub">CPSNS 전 상품 NET 단가 <del class="slash">280원</del> → <strong>240원</strong></p>
+<a class="calc-link" href="#calc"><span class="tag">10초면 끝</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B1F14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M8 6h8"></path><path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h4"></path></svg>우리 캠페인 할인금액 계산해 보기<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B1F14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a>
+</div>
+<div class="scene">
+<svg viewBox="-148 -10 860 290" role="img" aria-label="눈 쌓인 바닥 위, 마시멜로를 띄운 nap 머그잔 양옆으로 눈사람, 랜턴, 트리, 진저브레드 쿠키, 선물 상자가 모여 있는 겨울 풍경">
+<g fill="#F2B04A"><path d="M-40 52 l2 -6 l6 -2 l-6 -2 l-2 -6 l-2 6 l-6 2 l6 2z"></path><path d="M150 30 l2 -6 l6 -2 l-6 -2 l-2 -6 l-2 6 l-6 2 l6 2z"></path><path d="M410 28 l2 -6 l6 -2 l-6 -2 l-2 -6 l-2 6 l-6 2 l6 2z"></path><path d="M612 64 l2 -6 l6 -2 l-6 -2 l-2 -6 l-2 6 l-6 2 l6 2z"></path></g>
+<g fill="#FFF4E2" opacity="0.7"><circle cx="-10" cy="120" r="3"></circle><circle cx="540" cy="110" r="3"></circle><circle cx="180" cy="90" r="2.5"></circle><circle cx="380" cy="70" r="2.5"></circle></g>
+<path d="M-142 282 C -124 270 -110 258 -82 254 C -40 250 20 242 90 236 C 160 230 230 225 300 226 C 370 227 440 234 500 238 C 560 242 620 248 662 252 C 684 256 698 268 706 282z" fill="#FFFFFF"></path>
+<g transform="translate(-80 186)">
+<ellipse cx="22" cy="44" rx="30" ry="22" fill="#F2B04A" opacity="0.18"></ellipse>
+<path d="M13 8 h18 l5 7 h-28z" fill="#3B1F14" stroke="#3B1F14" stroke-width="2" stroke-linejoin="round"></path>
+<rect x="17" y="15" width="10" height="9" rx="1.5" fill="#3B1F14"></rect><rect x="20" y="17" width="4" height="5" rx="1" fill="#FFD27A"></rect>
+<path d="M9 24 h26 l7 32 h-40z" fill="#3B1F14" stroke="#3B1F14" stroke-width="3" stroke-linejoin="round"></path>
+<path d="M13 28 h18 l5 25 h-28z" fill="#5A2A19"></path>
+<path d="M14 49 L30 45 M14 45 L30 49" stroke="#8A4B2C" stroke-width="3.5" stroke-linecap="round"></path>
+<g class="flame"><path d="M22 30 C30 38 33 44 30 48 H14 C11 44 14 38 18 34 C19 38 21 39 22 30z" fill="#E8862F"></path><path d="M22 38 C26 42 27 45 25 48 H19 C17 45 19 42 22 38z" fill="#F2B04A"></path></g>
+<path d="M17 28 L13 53 M22 28 V53 M27 28 L31 53" stroke="#3B1F14" stroke-width="1" opacity="0.35"></path>
+<path d="M0 56 h44 a3 3 0 0 1 3 3 v4 h-5 v6 h-7 v-4 h-26 v4 h-7 v-6 h-5 v-4 a3 3 0 0 1 3 -3z" fill="#3B1F14"></path>
+</g>
+<use href="#pine" x="-24" y="142" width="74" height="112"></use>
+<use href="#pine" x="40" y="96" width="100" height="150"></use>
+<use href="#gift" x="104" y="216" width="32" height="32" color="#E8862F"></use>
+<g transform="translate(150 202)">
+<path d="M11 24 L3 30 M25 24 L33 30 M14 34 L10 46 M22 34 L26 46" fill="none" stroke="#B8732F" stroke-width="7.5" stroke-linecap="round"></path>
+<rect x="9.5" y="17" width="17" height="20" rx="7" fill="#B8732F"></rect>
+<circle cx="18" cy="10" r="9.5" fill="#B8732F"></circle>
+<circle cx="14.8" cy="9" r="1.5" fill="#3B1F14"></circle><circle cx="21.2" cy="9" r="1.5" fill="#3B1F14"></circle>
+<path d="M14.5 13 q3.5 2.8 7 0" fill="none" stroke="#F3D9B8" stroke-width="1.5" stroke-linecap="round"></path>
+<circle cx="18" cy="24" r="1.9" fill="#C9472B"></circle><circle cx="18" cy="30.5" r="1.9" fill="#C9472B"></circle>
+<path d="M4.2 26.6 l2.2 3.3 M31.8 26.6 l-2.2 3.3 M9.6 42 l2.8 1.2 M26.4 42 l-2.8 1.2" fill="none" stroke="#F3D9B8" stroke-width="1.5" stroke-linecap="round"></path>
+</g>
+<path d="M500 22 a26 26 0 1 0 20 42 a20 20 0 1 1 -20 -42z" fill="#F3D9B8"></path>
+<g color="#F3D9B8" opacity="0.6"><use href="#flake" x="70" y="40" width="20" height="20"></use><use href="#flake" x="440" y="50" width="18" height="18"></use><use href="#flake" x="190" y="10" width="16" height="16"></use></g>
+<g fill="#F2B04A"><path d="M120 76 l1.5 -4.5 l4.5 -1.5 l-4.5 -1.5 l-1.5 -4.5 l-1.5 4.5 l-4.5 1.5 l4.5 1.5z"></path><path d="M360 22 l1.5 -4.5 l4.5 -1.5 l-4.5 -1.5 l-1.5 -4.5 l-1.5 4.5 l-4.5 1.5 l4.5 1.5z"></path></g>
+<g class="steam" fill="none" stroke="#F3D9B8" stroke-width="5" stroke-linecap="round">
+<path d="M235 58 C220 38 250 28 235 3"></path><path d="M275 50 C260 30 290 20 275 -6"></path><path d="M315 58 C300 38 330 28 315 3"></path>
+</g>
+<g fill="#FFFFFF"><rect x="220" y="66" width="32" height="26" rx="8"></rect><rect x="260" y="60" width="32" height="30" rx="8"></rect><rect x="300" y="66" width="32" height="26" rx="8"></rect></g>
+<path d="M346 112 h20 a30 30 0 0 1 0 60 h-20" fill="none" stroke="#FFF4E2" stroke-width="16"></path>
+<path d="M196 84 h160 v120 a38 38 0 0 1 -38 38 h-84 a38 38 0 0 1 -38 -38z" fill="#FFF4E2"></path>
+<rect x="196" y="84" width="160" height="16" fill="#E8862F"></rect>
+<rect x="196" y="188" width="160" height="10" fill="#C9472B"></rect>
+<svg x="224" y="124" width="104" height="41" viewBox="0 0 445 174" style="--logo-n:#6B2414;--logo-rest:#6B2414" aria-hidden="true"><use href="#logo" x="0" y="0" width="960" height="175"></use></svg>
+<use href="#gift-stripe" x="394" y="170" width="84" height="84" color="#C9472B"></use>
+<use href="#gift-dots" x="466" y="196" width="58" height="58" color="#2F5D3A"></use>
+<use href="#gift" x="410" y="118" width="56" height="56" color="#E8862F"></use>
+<use href="#xtree" x="530" y="120" width="84" height="127"></use>
+<use href="#snowman" x="616" y="174" width="52" height="77"></use>
+<use href="#maple" x="368" y="234" width="26" height="28" fill="#E8862F" transform="rotate(25 381 248)"></use>
+<use href="#leaf" x="122" y="240" width="20" height="20" fill="#F2B04A"></use>
+</svg>
+</div>
+</div>
+<div class="hero-curve"></div>
+</header>
+
+<main>
+<section class="price">
+<svg class="deco" style="left:4%;top:30px" width="52" height="56" aria-hidden="true"><use href="#maple" width="52" height="56" fill="#E8862F"></use></svg>
+<svg class="deco" style="right:5%;top:180px" width="40" height="40" aria-hidden="true"><use href="#leaf" width="40" height="40" fill="#C9472B"></use></svg>
+<div class="wrap">
+<div class="card">
+<span class="ribbon">nap 연말 특별 단가 할인</span>
+<div class="stamp" aria-hidden="true"><span class="s1">건당</span><span class="s2">-40원</span><span class="s3">DOWN</span></div>
+<span class="card-label">CPSNS 전 상품 · NET 단가</span>
+<div class="price-row">
+<del class="slash">280원</del>
+<svg class="arrow" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9h10V4.8c0-.9 1.1-1.4 1.8-.7l7.2 7.2c.4.4.4 1 0 1.4l-7.2 7.2c-.7.7-1.8.2-1.8-.7V15h-10a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" fill="#6E4A3A"></path></svg>
+<span class="price-new"><span class="hl">240</span><small>원</small></span>
+</div>
+<div class="chips"><span class="chip">건당 40원<svg viewBox="5 4 14 17" fill="none" stroke="#6B2414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-label="인하" role="img"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></span><span class="chip">약 14% 할인</span><span class="chip">집행기간 ~12/31</span></div>
+<div class="exclude">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 7v6"></path><path d="M12 17h.01"></path></svg>
+<span>CPSNS 상품은 특별 프로모션 대상으로, 4분기 프로모션 대상에서는 제외됩니다</span>
+</div>
+<span class="note">※ NET 단가 기준이며, 수수료는 별도 마크업이 필요합니다</span>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<svg class="strip" viewBox="0 0 1280 84" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+<path d="M-10 8 Q 640 52 1290 8" fill="none" stroke="#9C7F70" stroke-width="2"></path>
+<use class="swing" href="#mitten" x="150" y="16" width="30" height="42" fill="#C9472B"></use>
+<use class="swing" href="#stocking" x="260" y="22" width="36" height="52" fill="#2F5D3A"></use>
+<use class="swing" href="#leaf" x="380" y="30" width="26" height="26" fill="#E8862F"></use>
+<use class="swing" href="#mitten" x="460" y="32" width="30" height="42" fill="#E8862F"></use>
+<use class="swing" href="#stocking" x="560" y="34" width="36" height="52" fill="#C9472B"></use>
+<use class="swing" href="#maple" x="670" y="34" width="28" height="30" fill="#F2B04A"></use>
+<use class="swing" href="#mitten" x="760" y="32" width="30" height="42" fill="#2F5D3A"></use>
+<use class="swing" href="#stocking" x="860" y="28" width="36" height="52" fill="#E8862F"></use>
+<use class="swing" href="#leaf" x="980" y="22" width="26" height="26" fill="#C9472B"></use>
+<use class="swing" href="#mitten" x="1080" y="16" width="30" height="42" fill="#C9472B"></use>
+</svg>
+<div class="wrap">
+<div class="sec-head"><h2>채널 7개, 전부 240원</h2></div>
+<div class="channels">
+<div class="ch-row">
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z M10 9l5 3-5 3z"></path></svg>유튜브</span>
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8 M17 6.5h.01"></path></svg>인스타그램</span>
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg>카카오톡</span>
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11a3 3 0 1 0 0-6a3 3 0 1 0 0 6 M3 20c0-3 3-5 6-5s6 2 6 5 M16 5a3 3 0 0 1 0 6 M18 15c2 .5 3 2.5 3 5"></path></svg>페이스북</span>
+</div>
+<div class="ch-row">
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform:translateY(-0.5px)"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z M10 20a2 2 0 0 0 4 0"></path></svg>네이버 뉴스 구독</span>
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z M9 8V6a3 3 0 0 1 6 0v2"></path></svg>네이버 쇼핑라이브 알림</span>
+<span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2.5h10a2.5 2.5 0 0 1 2.5 2.5v14a2.5 2.5 0 0 1-2.5 2.5H7a2.5 2.5 0 0 1-2.5-2.5V5A2.5 2.5 0 0 1 7 2.5z M10 9l5 3-5 3z"></path></svg>네이버 클립</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="calc">
+<div class="wrap">
+<div class="sec-head">
+<span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B1F14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M8 6h8"></path><path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h4"></path></svg>할인 계산기</span>
+<h2>얼마나 아낄지,<br>직접 계산해 보세요</h2>
+<p>숫자만 바꾸면 할인 금액이 바로 나와요</p>
+</div>
+<div class="calc-wrap">
+<svg class="buddy" viewBox="-16 -20 132 142" role="img" aria-label="빨간 털모자를 쓰고 웃고 있는 계산기 캐릭터"><use href="#buddy" x="-16" y="-20" width="132" height="142"></use></svg>
+<div class="calc">
+<div class="tabs" role="group" aria-label="계산 기준">
+<button class="tab" type="button" id="tab-count" aria-pressed="true">집행 건수로</button>
+<button class="tab" type="button" id="tab-budget" aria-pressed="false">집행 예산으로</button>
+</div>
+<div class="fee">
+<span class="fee-label">수수료 기준</span>
+<div class="grid4" id="fee-opts" role="group" aria-label="수수료 기준">
+<button class="key fee-btn" type="button" data-fee="0" aria-pressed="true">NET</button>
+<button class="key fee-btn" type="button" data-fee="10" aria-pressed="false">수수료 10%</button>
+<button class="key fee-btn" type="button" data-fee="20" aria-pressed="false">수수료 20%</button>
+<button class="key fee-btn" type="button" data-fee="30" aria-pressed="false">수수료 30%</button>
+</div>
+</div>
+<div class="field">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+<label for="calc-amount" id="calc-label">집행 건수</label>
+<span class="hint">여기에 숫자를 넣어보세요<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B2414" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></span>
+</div>
+<div class="input-box pulse" id="input-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9C7F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:10px;flex:none"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg><input id="calc-amount" type="text" inputmode="numeric" autocomplete="off" value="10,000"><span id="calc-unit">건</span></div>
+<div class="grid4" id="presets"></div>
+</div>
+<div class="markup" id="markup-note"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 7v6"></path><path d="M12 17h.01"></path></svg><span id="markup-text"></span></div>
+<div class="rows" id="rows" aria-live="polite"></div>
+<div class="result" aria-live="polite">
+<span class="lead" id="res-lead">프로모션 단가로 집행하면</span>
+<span class="big" id="res-big"></span>
+<span class="fine" id="res-fine"></span>
+</div>
+</div>
+</div>
+</div>
+<svg class="camp t-noon" viewBox="0 0 1280 220" preserveAspectRatio="xMidYMax slice" role="img" aria-label="눈 쌓인 숲속 캠핑장. 텐트 옆 모닥불에서 남자아이가 마시멜로를 굽고, 여자아이가 코코아를 들고 서 있어요. 보는 시간에 따라 하늘이 아침·낮·저녁·밤으로 바뀌어요">
+<defs>
+<linearGradient id="campSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="sk1"></stop><stop offset="1" class="sk2"></stop></linearGradient>
+<linearGradient id="campFadeG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"></stop><stop offset="0.38" stop-color="#fff" stop-opacity="1"></stop></linearGradient>
+<mask id="campFade"><rect x="0" y="0" width="1280" height="190" fill="url(#campFadeG)"></rect></mask>
+</defs>
+<rect class="sky" x="0" y="0" width="1280" height="190" fill="url(#campSky)" mask="url(#campFade)"></rect>
+<g class="stars" fill="#FFF4E2">
+<path d="M1090 40 a20 20 0 1 0 15 32 a15 15 0 1 1 -15 -32z"></path>
+<path d="M210 40 l1.5 -4.5 l4.5 -1.5 l-4.5 -1.5 l-1.5 -4.5 l-1.5 4.5 l-4.5 1.5 l4.5 1.5z"></path>
+<path d="M520 30 l1.5 -4.5 l4.5 -1.5 l-4.5 -1.5 l-1.5 -4.5 l-1.5 4.5 l-4.5 1.5 l4.5 1.5z"></path>
+<path d="M1010 26 l1.5 -4.5 l4.5 -1.5 l-4.5 -1.5 l-1.5 -4.5 l-1.5 4.5 l-4.5 1.5 l4.5 1.5z"></path>
+<circle cx="120" cy="70" r="1.8"></circle><circle cx="380" cy="80" r="1.5"></circle><circle cx="700" cy="20" r="1.8"></circle><circle cx="860" cy="74" r="1.5"></circle><circle cx="1180" cy="96" r="1.8"></circle><circle cx="60" cy="110" r="1.4"></circle><circle cx="1240" cy="40" r="1.4"></circle><circle cx="300" cy="110" r="1.3"></circle>
+</g>
+<g class="sun"><g class="rays" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M0 -32 V-42 M0 32 V42 M-32 0 H-42 M32 0 H42 M22.6 22.6 L29.7 29.7 M-22.6 22.6 L-29.7 29.7 M22.6 -22.6 L29.7 -29.7 M-22.6 -22.6 L-29.7 -29.7"></path></g><circle r="24" fill="currentColor"></circle></g>
+<g class="clouds"><path d="M250 64 a14 14 0 0 1 26 -6 a18 18 0 0 1 32 8 a11 11 0 0 1 0 22 h-58 a12 12 0 0 1 0 -24z"></path><path d="M840 46 a12 12 0 0 1 22 -5 a15 15 0 0 1 27 6 a10 10 0 0 1 0 19 h-49 a10 10 0 0 1 0 -20z"></path></g>
+<g class="mtn"><path d="M60 150 L90 70 L120 150z M110 150 L150 50 L190 150z M1080 150 L1120 56 L1160 150z M1150 150 L1180 80 L1210 150z M240 150 L262 96 L284 150z M960 150 L985 92 L1010 150z"></path></g>
+<path class="bk" d="M0 150 Q 320 132 640 148 T 1280 142 V220 H0z"></path>
+<path d="M0 168 Q 320 156 640 172 T 1280 164 V220 H0z" fill="#FFFFFF"></path>
+<path d="M300 22 Q 640 70 980 22" fill="none" stroke="#6E4A3A" stroke-width="2"></path>
+<g class="bulbs"><circle cx="340" cy="30" r="6" fill="#F2B04A"></circle><circle cx="400" cy="38" r="6" fill="#C9472B"></circle><circle cx="460" cy="44" r="6" fill="#FFF4E2" stroke="#EBD3BC"></circle><circle cx="520" cy="48" r="6" fill="#E8862F"></circle><circle cx="580" cy="50" r="6" fill="#F2B04A"></circle><circle cx="640" cy="51" r="6" fill="#C9472B"></circle><circle cx="700" cy="50" r="6" fill="#2F5D3A"></circle><circle cx="760" cy="48" r="6" fill="#F2B04A"></circle><circle cx="820" cy="44" r="6" fill="#E8862F"></circle><circle cx="880" cy="38" r="6" fill="#C9472B"></circle><circle cx="940" cy="30" r="6" fill="#F2B04A"></circle></g>
+<use href="#xtree" x="300" y="60" width="70" height="106"></use>
+<use href="#xtree" x="1020" y="58" width="72" height="109"></use>
+<g transform="translate(410 46)">
+<path d="M100 10 L190 130 H10z" fill="#E8862F"></path>
+<path d="M100 10 L190 130 H140z" fill="#C9472B"></path>
+<path d="M100 54 L132 130 H68z" fill="#FFD27A"></path>
+<path class="glow" d="M100 54 L132 130 H68z" fill="#FFF1B8"></path>
+<path d="M100 54 L68 130 H80 L100 76z" fill="#B8391F"></path>
+<path d="M100 10 L118 34 Q100 42 82 34z" fill="#FFF4E2"></path>
+<path d="M100 10 V2 M10 130 L-12 140 M190 130 L212 140" stroke="#6B3A22" stroke-width="2.5" stroke-linecap="round"></path>
+</g>
+<circle class="glow" cx="631" cy="160" r="22" fill="#FFD27A" fill-opacity="0.3"></circle>
+<g transform="translate(616 142)"><rect x="4" y="0" width="22" height="6" rx="2" fill="#3B1F14"></rect><rect x="6" y="6" width="18" height="24" rx="3" fill="#FFD27A" stroke="#3B1F14" stroke-width="2"></rect><path d="M8 0 Q15 -12 22 0" fill="none" stroke="#3B1F14" stroke-width="2"></path></g>
+<circle class="glow" cx="700" cy="160" r="46" fill="#F2B04A" fill-opacity="0.22"></circle>
+<g transform="translate(660 104)">
+<circle cx="8" cy="80" r="7" fill="#9C7F70"></circle><circle cx="22" cy="84" r="7" fill="#B49A8A"></circle><circle cx="60" cy="84" r="7" fill="#9C7F70"></circle><circle cx="74" cy="80" r="7" fill="#B49A8A"></circle>
+<path d="M10 78 L70 62" stroke="#6B3A22" stroke-width="10" stroke-linecap="round"></path>
+<path d="M12 62 L72 78" stroke="#8A4B2C" stroke-width="10" stroke-linecap="round"></path>
+<g class="flame"><path d="M40 6 C56 28 64 44 58 58 C54 68 28 68 22 58 C16 44 28 32 33 20 C36 32 40 34 40 6z" fill="#E8862F"></path><path d="M40 28 C49 40 51 50 47 58 C45 63 36 63 34 58 C30 50 36 42 40 28z" fill="#F2B04A"></path><path d="M40 46 C44 52 44 57 42 60 H38 C36 57 36 52 40 46z" fill="#FFF4E2"></path></g>
+</g>
+<path d="M786 110 L724 134" stroke="#6B3A22" stroke-width="2.5" stroke-linecap="round"></path>
+<circle cx="721" cy="135" r="5.5" fill="#FFF4E2" stroke="#EBD3BC"></circle>
+<g transform="translate(822 0) scale(-1 1)"><use href="#kid2" x="0" y="86" width="46" height="92" color="#4E6E8E" fill="#C9472B"></use></g>
+<use href="#girl" x="830" y="86" width="46" height="92" color="#E8862F"></use>
+<g transform="translate(888 108)">
+<path d="M8 2 h34 l-3 34 h-28z" fill="#2F5D3A"></path>
+<path d="M16 6 h18 v26 l-4.5 -3 l-4.5 3 l-4.5 -3 l-4.5 3z" fill="#F2B04A"></path>
+<path d="M16 12 h18 M16 20 h18" stroke="#C9472B" stroke-width="2"></path>
+<path d="M4 36 h42 l-4 10 h-34z" fill="#24492D"></path>
+<path d="M1 26 h10 M39 26 h10" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path>
+<path d="M9 46 L41 68 M41 46 L9 68" stroke="#6B3A22" stroke-width="3.5" stroke-linecap="round"></path>
+</g>
+<g transform="translate(950 138)">
+<g fill="#8A4B2C"><circle cx="10" cy="30" r="9"></circle><circle cx="28" cy="30" r="9"></circle><circle cx="46" cy="30" r="9"></circle><circle cx="19" cy="15" r="9"></circle><circle cx="37" cy="15" r="9"></circle><circle cx="28" cy="0" r="9"></circle></g>
+<g fill="none" stroke="#D9A066" stroke-width="2"><circle cx="10" cy="30" r="4"></circle><circle cx="28" cy="30" r="4"></circle><circle cx="46" cy="30" r="4"></circle><circle cx="19" cy="15" r="4"></circle><circle cx="37" cy="15" r="4"></circle><circle cx="28" cy="0" r="4"></circle></g>
+</g>
+<use href="#maple" x="200" y="186" width="24" height="26" fill="#E8862F" transform="rotate(20 212 199)"></use>
+<use href="#leaf" x="1100" y="188" width="22" height="22" fill="#C9472B"></use>
+</svg>
+</section>
+
+<section class="sec">
+<div class="wrap contact">
+<h2 style="font-size:clamp(24px,5.4vw,34px);line-height:1.3;margin-bottom:5px">올해가 가기 전에, 따뜻하게 집행하세요</h2>
+<a class="btn" href="https://drive.google.com/file/d/14G40Jgo8HEy49siIdoSy1_BxN2Dil3jA/view?usp=sharing" target="_blank" rel="noopener">CPSNS 소개서 바로가기
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:8px"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<div class="who">
+<div class="mail"><code id="mail">nap_perf@nasmedia.co.kr</code><button class="copy" type="button" id="copy-btn">주소 복사</button></div>
+<span class="copied" id="copied" aria-live="polite"></span>
+</div>
+<div class="notice">
+<strong>유의사항</strong>
+<ul>
+<li>집행기간 ~12/31까지인 CPSNS 캠페인에 적용됩니다.</li>
+<li>CPSNS 상품은 특별 프로모션 대상으로, 4분기 프로모션 대상에서 제외됩니다.</li>
+<li>최소집행금액은 1개월 기준 300만원입니다. (vat-)</li>
+<li>NET단가 기준 할인이며, 수수료는 별도 마크업 필요합니다.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<footer class="foot">
+<svg class="logo-svg" viewBox="0 0 960 175" role="img" aria-label="nap reward"><use href="#logo"></use></svg>
+<div class="foot-scene">
+<svg class="land" viewBox="0 44 1280 256" role="img" aria-label="이어지는 눈 언덕 양쪽 끝에서 썰매 타는 아이, 강아지, 아기 순록, 눈사람이 크리스마스 트리 옆에서 놀고 있는 풍경">
+<path d="M0 118 C 200 106 400 170 640 166 C 880 162 1080 108 1280 112 V300 H0z" fill="#F3E4D3"></path>
+<path d="M0 150 C 140 140 240 176 380 202 C 520 226 760 224 900 208 C 1040 192 1160 156 1280 150 V300 H0z" fill="#EBD3BC"></path>
+<path d="M0 180 C 120 176 220 210 360 246 C 520 272 760 268 920 250 C 1060 234 1180 196 1280 186 V300 H0z" fill="#FFFFFF"></path>
+<use href="#xtree" x="10" y="52" width="84" height="127"></use>
+<use href="#xtree" x="92" y="104" width="56" height="85"></use>
+<use href="#gift" x="140" y="168" width="24" height="24" color="#C9472B"></use>
+<g class="sled"><use href="#sledkid" x="198" y="138" width="104" height="89" color="#E8862F" fill="#2F5D3A" transform="rotate(15 250 182)"></use></g>
+<g class="hop"><use href="#puppy" x="330" y="180" width="86" height="65"></use></g>
+<g class="hop late"><use href="#deer" x="878" y="148" width="124" height="100"></use></g>
+<use href="#snowman-body" x="1010" y="106" width="88" height="128"></use>
+<g transform="translate(1010 106.44) scale(0.9778)"><g class="hatbob"><rect x="28" y="10" width="34" height="8" rx="2" fill="#3B1F14"></rect><rect x="34" y="-6" width="22" height="20" rx="2" fill="#3B1F14"></rect><rect x="34" y="8" width="22" height="4" fill="#C9472B"></rect></g></g>
+<use href="#gift" x="1096" y="188" width="36" height="36" color="#C9472B"></use>
+<use href="#gift" x="1128" y="196" width="26" height="26" color="#2F5D3A"></use>
+<use href="#xtree" x="1146" y="128" width="52" height="79"></use>
+<use href="#xtree" x="1182" y="62" width="92" height="139"></use>
+</svg>
+</div>
+<div class="foot-end"><span>따뜻한 연말 보내세요 · nap reward 팀</span></div>
+</footer>
+</main>
+
+<script>
+(function(){
+  var OLD = 280, NEW = 240, MAX = 10000000000;
+  var mode = 'count';
+  var input = document.getElementById('calc-amount');
+  var label = document.getElementById('calc-label');
+  var unit = document.getElementById('calc-unit');
+  var presets = document.getElementById('presets');
+  var rows = document.getElementById('rows');
+  var lead = document.getElementById('res-lead');
+  var big = document.getElementById('res-big');
+  var tabCount = document.getElementById('tab-count');
+  var tabBudget = document.getElementById('tab-budget');
+  var feeOpts = document.getElementById('fee-opts');
+  var markupNote = document.getElementById('markup-note');
+  var markupText = document.getElementById('markup-text');
+  var fine = document.getElementById('res-fine');
+  var fee = 0;
+  var PRESETS = {
+    count: [[10000,'1만 건'],[50000,'5만 건'],[100000,'10만 건'],[300000,'30만 건']],
+    budget: [[3000000,'300만 원'],[5000000,'500만 원'],[10000000,'1,000만 원'],[30000000,'3,000만 원']]
+  };
+  function fmt(n){ return Math.round(n).toLocaleString('ko-KR'); }
+  function fmtU(n){ return (Math.round(n*10)/10).toLocaleString('ko-KR', {maximumFractionDigits: 1}); }
+  function read(){ var d = input.value.replace(/[^0-9]/g,''); var n = d ? parseInt(d,10) : 0; return Math.min(n, MAX); }
+  function esc(s){ return String(s); }
+  function row(cls, k, v){ return '<div class="r '+cls+'"><span>'+k+'</span><b>'+v+'</b></div>'; }
+  function render(){
+    var n = read();
+    var k = (100 - fee) / 100;
+    var OLD_FIXED = {10: 310};
+    var uo = OLD_FIXED[fee] || Math.round(OLD / k), un = Math.round(NEW / k);
+    var tag = fee ? ' (수수료 ' + fee + '% 포함)' : ' (NET)';
+    if (fee) {
+      markupNote.classList.add('on');
+      markupText.textContent = 'NET 단가에 수수료 ' + fee + '%를 마크업한 금액이에요';
+      fine.textContent = '※ 수수료 ' + fee + '% 마크업 기준 계산 · 기존 ' + fmtU(uo) + '원 → 프로모션 ' + fmtU(un) + '원';
+    } else {
+      markupNote.classList.remove('on');
+      markupText.textContent = 'NET 단가 기준 금액이에요. 실제 집행 시 수수료는 별도로 마크업해야 해요';
+      fine.textContent = '※ NET 단가 기준 계산 · 수수료 별도';
+    }
+    if (mode === 'count') {
+      rows.innerHTML = row('old','기존 단가 ' + fmtU(uo) + '원' + tag, fmt(n*uo)+'원') + row('','프로모션 단가 ' + fmtU(un) + '원' + tag, fmt(n*un)+'원');
+      lead.textContent = n ? fmt(n)+'건 집행하면' : '집행 건수를 입력해 주세요';
+      big.innerHTML = '<em>'+fmt(n*(uo-un))+'원</em> 아껴요';
+    } else {
+      var a = Math.floor(n/uo + 1e-9), b = Math.floor(n/un + 1e-9);
+      rows.innerHTML = row('old','기존 단가 ' + fmtU(uo) + '원' + tag, fmt(a)+'건') + row('','프로모션 단가 ' + fmtU(un) + '원' + tag, fmt(b)+'건');
+      lead.textContent = n ? '같은 '+fmt(n)+'원이면' : '집행 예산을 입력해 주세요';
+      big.innerHTML = '<em>'+fmt(b-a)+'건</em> 더 집행해요';
+    }
+    big.classList.remove('pop'); void big.offsetWidth; big.classList.add('pop');
+  }
+  var box = document.getElementById('input-box');
+  function stopPulse(){ box.classList.remove('pulse'); }
+  input.addEventListener('focus', stopPulse);
+  presets.addEventListener('click', stopPulse);
+  function setMode(m){
+    mode = m;
+    tabCount.setAttribute('aria-pressed', m==='count');
+    tabBudget.setAttribute('aria-pressed', m==='budget');
+    label.textContent = m==='count' ? '집행 건수' : '집행 예산';
+    unit.textContent = m==='count' ? '건' : '원';
+    input.value = fmt(PRESETS[m][0][0]);
+    presets.innerHTML = '';
+    PRESETS[m].forEach(function(p){
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'preset'; b.textContent = p[1];
+      b.addEventListener('click', function(){ input.value = fmt(p[0]); render(); });
+      presets.appendChild(b);
+    });
+    render();
+  }
+  input.addEventListener('input', function(){
+    var n = read();
+    input.value = n ? fmt(n) : '';
+    render();
+  });
+  feeOpts.addEventListener('click', function(e){
+    var t = e.target.closest('.fee-btn'); if (!t) return;
+    fee = parseInt(t.getAttribute('data-fee'), 10) || 0;
+    Array.prototype.forEach.call(feeOpts.querySelectorAll('.fee-btn'), function(x){ x.setAttribute('aria-pressed', x === t); });
+    render();
+  });
+  tabCount.addEventListener('click', function(){ setMode('count'); });
+  tabBudget.addEventListener('click', function(){ setMode('budget'); });
+  setMode('count');
+
+
+  /* camping sky follows the viewer's clock (or #morning / #noon / #evening / #night) */
+  (function(){
+    var camp = document.querySelector('.camp'); if (!camp) return;
+    function pick(){
+      var tag = (location.hash || '').slice(1);
+      if (['morning','noon','evening','night'].indexOf(tag) < 0) {
+        var hr = new Date().getHours();
+        tag = hr >= 5 && hr < 11 ? 'morning' : hr >= 11 && hr < 16 ? 'noon' : hr >= 16 && hr < 19 ? 'evening' : 'night';
+      }
+      camp.classList.remove('t-morning','t-noon','t-evening','t-night');
+      camp.classList.add('t-' + tag);
+    }
+    pick();
+    window.addEventListener('hashchange', pick);
+    setInterval(pick, 5 * 60 * 1000);
+  })();
+  /* falling leaves and snow */
+  var cv = document.getElementById('fx');
+  var ctx = cv.getContext && cv.getContext('2d');
+  if (ctx) {
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var LEAF = ['#E8862F','#F2B04A','#C9472B','#B8391F','#D9A15A'];
+    var parts = [], W = 0, H = 0, dpr = 1;
+    function size(){
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = cv.clientWidth || window.innerWidth; H = cv.clientHeight || window.innerHeight;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      var n = W < 640 ? 5 : 9;
+      if (parts.length === n) return;
+      parts = [];
+      for (var i=0;i<n;i++) parts.push(make(i, n, true));
+    }
+    function make(slot, n, anyY){
+      var leaf = Math.random() < 0.6;
+      return {
+        slot: slot, leaf: leaf, x: (slot + 0.15 + Math.random()*0.7) / n * W,
+        y: anyY ? ((slot * 0.618) % 1) * H : -20,
+        s: leaf ? 6 + Math.random()*6 : 2 + Math.random()*2.5,
+        vy: leaf ? 0.16 + Math.random()*0.18 : 0.2 + Math.random()*0.2,
+        sway: Math.random()*Math.PI*2, sw: 0.2 + Math.random()*0.35,
+        r: Math.random()*Math.PI*2, vr: (Math.random()-.5)*0.012,
+        c: LEAF[Math.floor(Math.random()*LEAF.length)]
+      };
+    }
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      for (var i=0;i<parts.length;i++){
+        var p = parts[i];
+        ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.r);
+        if (p.leaf){
+          ctx.globalAlpha = 0.8; ctx.fillStyle = p.c;
+          ctx.beginPath(); ctx.ellipse(0,0,p.s*0.45,p.s,0,0,Math.PI*2); ctx.fill();
+          ctx.strokeStyle = 'rgba(107,36,20,.35)'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(0,-p.s); ctx.lineTo(0,p.s); ctx.stroke();
+        } else {
+          ctx.globalAlpha = 0.9; ctx.fillStyle = '#FFFFFF';
+          ctx.strokeStyle = 'rgba(156,127,112,.35)'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.arc(0,0,p.s,0,Math.PI*2); ctx.fill(); ctx.stroke();
+        }
+        ctx.restore();
+      }
+    }
+    function step(){
+      if (Math.abs((cv.clientWidth || W) - W) > 2 || Math.abs((cv.clientHeight || H) - H) > 40) size();
+      for (var i=0;i<parts.length;i++){
+        var p = parts[i];
+        p.sway += 0.007; p.y += p.vy; p.x += Math.sin(p.sway)*p.sw; p.r += p.vr;
+        if (p.y > H + 20) parts[i] = make(p.slot, parts.length, false);
+      }
+      draw();
+      if (!document.hidden) requestAnimationFrame(step); else waiting = true;
+    }
+    var waiting = false;
+    document.addEventListener('visibilitychange', function(){ if (!document.hidden && waiting && !still){ waiting = false; requestAnimationFrame(step); } });
+    if (still) { cv.style.display = 'none'; }
+    else {
+      window.addEventListener('resize', size);
+      size();
+      requestAnimationFrame(step);
+    }
+  }
+
+  var copyBtn = document.getElementById('copy-btn');
+  var copied = document.getElementById('copied');
+  var mail = document.getElementById('mail');
+  function selectMail(){ var r = document.createRange(); r.selectNodeContents(mail); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+  copyBtn.addEventListener('click', function(){
+    var text = mail.textContent;
+    try {
+      navigator.clipboard.writeText(text).then(function(){ copied.textContent = '이메일 주소를 복사했어요'; }, function(){ selectMail(); copied.textContent = '주소를 선택해 두었어요. 복사해서 사용해 주세요'; });
+    } catch (e) { selectMail(); copied.textContent = '주소를 선택해 두었어요. 복사해서 사용해 주세요'; }
+  });
+})();
+</script>
+
+</body>
+</html>
