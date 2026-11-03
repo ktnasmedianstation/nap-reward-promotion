@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="CPSNS 전 상품 NET 단가 280원 → 240원. 2026년 12월 31일 집행분까지 적용되는 nap reward 연말 특별 프로모션.">
+<meta name="description" content="nap reward 2차 특별 프로모션. CPM NET 단가 3,000원 → 2,000원, CPSNS NET 단가 280원 → 240원. 2026년 12월 31일 집행분까지 적용됩니다.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="연말정산보다 먼저 오는 혜택 | nap reward CPSNS 특별 프로모션">
-<meta property="og:description" content="CPSNS 전 상품 NET 단가 280원 → 240원 (~12/31 집행까지)">
-<title>CPSNS 연말 특별 프로모션</title>
+<meta property="og:title" content="연말정산보다 먼저 오는 혜택 | nap reward 2차 특별 프로모션">
+<meta property="og:description" content="CPM 3,000원 → 2,000원 · CPSNS 280원 → 240원 (NET 단가, ~12/31 집행까지)">
+<title>nap reward 연말 특별 단가 할인</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&family=Nunito:wght@900&display=swap">
 <style>
@@ -234,11 +234,32 @@ h2{font-family:var(--f-body);font-weight:900}
 @media (prefers-reduced-motion:no-preference){.steam path{animation:rise 3.6s ease-in-out infinite}.steam path:nth-child(2){animation-delay:.6s}.steam path:nth-child(3){animation-delay:1.2s}}
 @keyframes rise{0%,100%{transform:translateY(0);opacity:.85}50%{transform:translateY(-6px);opacity:.45}}
 @media (max-width:480px){.calc-link{font-size:15px;padding:0 18px}.price-row{gap:6px}.price-row del{font-size:clamp(22px,7.4vw,30px)}.price-new{font-size:clamp(44px,15vw,60px)}.price-new small{font-size:clamp(20px,6.8vw,28px)}.price-row svg{width:clamp(24px,7.4vw,32px);height:clamp(24px,7.4vw,32px)}.price-new{padding:3px 12px 4px}.card{padding-left:16px;padding-right:16px}.chip{font-size:13px;padding:5.5px 11px 6.5px}.chips{gap:6px}}
+
+/* 2nd promo content */
+.sub{display:flex;flex-direction:column;align-items:center;gap:2px}
+.sub .sl{display:block}
+.card .prod{display:flex;flex-direction:column;align-items:center;gap:20px;width:100%}
+.pdiv{width:100%;border:0;border-top:2px dashed var(--line);margin:0}
+.card .price-row{flex-wrap:nowrap}
+@media (max-width:480px){.card .price-new{font-size:clamp(34px,11vw,46px)}.card .price-new small{font-size:clamp(16px,5vw,22px)}.card .price-row del{font-size:clamp(17px,5.4vw,24px)}.card .price-row svg{width:24px;height:24px}.card .card-label{font-size:15px}}
+.sec-head h2{font-size:clamp(24px,6.4vw,34px)}
+@media (min-width:481px){.card .price-new{font-size:80px}.card .price-new small{font-size:34px}.card .price-row del{font-size:38px}}
+.calc{transition:background-color .35s ease}
+.calc .tabs:first-child{background:rgba(59,31,20,.16)}
+.calc .tabs:first-child .tab{min-width:100px;font-weight:900;font-size:16px}
+.calc.is-cpm{background:#E2702C}
+.calc.is-cpm .tabs:first-child .tab[aria-pressed="true"]{background:#B8391F;color:#FFFFFF}
+.calc.is-cpm .input-box{background:#FFF4EA}
+.calc.is-cpm .result{background:#5A1D0F;box-shadow:inset 0 0 0 3px #3E140A}
+.calc.is-cpm .result .big em{color:#FFB25C}
+.calc.is-cpsns .tabs:first-child .tab[aria-pressed="true"]{background:var(--cocoa);color:#FFF4E2}
+.btns{display:flex;flex-wrap:nowrap;justify-content:center;gap:8px;width:100%}
+.btns .btn{flex:0 1 auto;min-height:44px;padding:0 16px;font-size:14px;white-space:nowrap}
+.btns .btn svg{width:14px;height:14px;margin-left:5px!important}
+@media (max-width:480px){.btns{gap:6px}.btns .btn{flex:1 1 0;min-width:0;padding:0 8px;font-size:12px;min-height:40px}.btns .btn svg{display:none}}
 </style>
-<style>html,body{margin:0;padding:0} img{max-width:100%} [hidden]{display:none!important}</style>
 </head>
 <body>
-
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
@@ -253,7 +274,7 @@ h2{font-family:var(--f-body);font-weight:900}
 <symbol id="xtree" viewBox="0 0 90 136"><path d="M45 14 L68 48 H58 L78 80 H64 L88 114 H2 L26 80 H12 L32 48 H22z" fill="#2F5D3A"></path><path d="M32 48 h26 l-4 6 h-18z M26 80 h38 l-4 6 h-30z M2 114 h86 l-6 5 h-74z" fill="#FFF4E2"></path><path d="M31 62 Q45 72 61 60 M20 96 Q45 108 72 94" fill="none" stroke="#F2B04A" stroke-width="2.5"></path><circle cx="38" cy="67" r="4" fill="#C9472B"></circle><circle cx="56" cy="65" r="4" fill="#F2B04A"></circle><circle cx="29" cy="99" r="4.5" fill="#E8862F"></circle><circle cx="49" cy="103" r="4.5" fill="#C9472B"></circle><circle cx="67" cy="97" r="4.5" fill="#FFF4E2"></circle><circle cx="45" cy="42" r="3" fill="#C9472B"></circle><polygon points="45,0 48,8 56,8 50,13 52,21 45,16 38,21 40,13 34,8 42,8" fill="#F2B04A"></polygon><rect x="40" y="119" width="10" height="16" fill="#6B3A22"></rect></symbol>
 <symbol id="kid2" viewBox="0 0 60 120"><path d="M22 92 v22 h7 v-22z M33 92 v22 h7 v-22z" fill="#3B1F14"></path><path d="M20 58 q-6 10 -4 20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><path d="M40 56 q8 -10 6 -22" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><path d="M18 50 Q30 44 42 50 L46 94 H14z" fill="currentColor"></path><circle cx="30" cy="34" r="13" fill="#F6D2B0"></circle><path d="M17 32 a13 13 0 0 1 26 0z"></path><rect x="16" y="29" width="28" height="5" rx="2.5" fill="#FFF4E2"></rect><circle cx="30" cy="17" r="4" fill="#FFF4E2"></circle><circle cx="25" cy="37" r="1.6" fill="#3B1F14"></circle><circle cx="35" cy="37" r="1.6" fill="#3B1F14"></circle><circle cx="30" cy="43" r="1.8" fill="#3B1F14"></circle><circle cx="22" cy="40" r="2" fill="#F2A08A"></circle><circle cx="38" cy="40" r="2" fill="#F2A08A"></circle><rect x="18" y="47" width="24" height="6" rx="3" fill="#FFF4E2"></rect><rect x="21" y="48" width="6" height="14" rx="2" fill="#FFF4E2"></rect></symbol>
 <symbol id="sledkid" viewBox="0 -16 112 96"><path d="M6 68 h82 q14 0 16 -12" fill="none" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path><path d="M24 58 v10 M70 58 v10" stroke="#6B3A22" stroke-width="4"></path><rect x="12" y="50" width="76" height="10" rx="3" fill="#C9472B"></rect><path d="M90 56 q-12 -14 -32 -24" fill="none" stroke="#6B3A22" stroke-width="2"></path><rect x="54" y="42" width="26" height="9" rx="4.5" fill="#3B1F14"></rect><path d="M34 24 Q46 18 58 24 L62 52 H30z" fill="currentColor"></path><path d="M54 30 q8 4 12 8" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><path d="M36 22 q-14 -2 -24 6" fill="none" stroke="#FFF4E2" stroke-width="5" stroke-linecap="round"></path><circle cx="46" cy="10" r="11" fill="#F6D2B0"></circle><path d="M35 8 a11 11 0 0 1 22 0z"></path><rect x="34" y="5" width="24" height="4" rx="2" fill="#FFF4E2"></rect><circle cx="46" cy="-4" r="3.5" fill="#FFF4E2"></circle><circle cx="42" cy="12" r="1.4" fill="#3B1F14"></circle><circle cx="50" cy="12" r="1.4" fill="#3B1F14"></circle><path d="M43 16 q3 3 6 0" fill="none" stroke="#3B1F14" stroke-width="1.4" stroke-linecap="round"></path><rect x="36" y="20" width="22" height="5" rx="2.5" fill="#FFF4E2"></rect></symbol>
-<symbol id="buddy" viewBox="-16 -20 132 142"><path d="M8 30 q-16 4 -14 22" fill="none" stroke="#3B1F14" stroke-width="5" stroke-linecap="round"></path><circle cx="-6" cy="54" r="7" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></circle><path d="M92 40 q14 -6 16 -22" fill="none" stroke="#3B1F14" stroke-width="5" stroke-linecap="round"></path><circle cx="108" cy="16" r="7" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></circle><rect x="14" y="16" width="84" height="104" rx="20" fill="#B8391F"></rect><rect x="8" y="10" width="84" height="104" rx="20" fill="#F2B04A" stroke="#3B1F14" stroke-width="4"></rect><rect x="18" y="22" width="64" height="34" rx="9" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3.5"></rect><circle cx="38" cy="38" r="4.5" fill="#3B1F14"></circle><circle cx="62" cy="38" r="4.5" fill="#3B1F14"></circle><circle cx="39.5" cy="36.5" r="1.4" fill="#FFF4E2"></circle><circle cx="63.5" cy="36.5" r="1.4" fill="#FFF4E2"></circle><path d="M44 44 q6 7 12 0" fill="none" stroke="#3B1F14" stroke-width="3" stroke-linecap="round"></path><circle cx="29" cy="46" r="4" fill="#F2A08A"></circle><circle cx="71" cy="46" r="4" fill="#F2A08A"></circle><g fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"><rect x="19" y="64" width="17" height="13" rx="4"></rect><rect x="42" y="64" width="17" height="13" rx="4"></rect><rect x="19" y="82" width="17" height="13" rx="4"></rect><rect x="42" y="82" width="17" height="13" rx="4"></rect><rect x="19" y="100" width="17" height="9" rx="3"></rect><rect x="42" y="100" width="17" height="9" rx="3"></rect></g><rect x="65" y="64" width="17" height="45" rx="5" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></rect><path d="M69 82 h9 M69 88 h9" stroke="#FFF4E2" stroke-width="3" stroke-linecap="round"></path><path d="M26 12 a24 18 0 0 1 48 0z" fill="#C9472B" stroke="#3B1F14" stroke-width="3.5" stroke-linejoin="round"></path><rect x="22" y="6" width="56" height="10" rx="5" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"></rect><circle cx="50" cy="-10" r="7" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"></circle></symbol>
+<symbol id="buddy" viewBox="-16 -20 132 142"><path d="M8 30 q-16 4 -14 22" fill="none" stroke="#3B1F14" stroke-width="5" stroke-linecap="round"></path><circle cx="-6" cy="54" r="7" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></circle><path d="M92 40 q14 -6 16 -22" fill="none" stroke="#3B1F14" stroke-width="5" stroke-linecap="round"></path><circle cx="108" cy="16" r="7" fill="#C9472B" stroke="#3B1F14" stroke-width="3"></circle><ellipse cx="32" cy="117" rx="10" ry="5" fill="#3B1F14"></ellipse><ellipse cx="68" cy="117" rx="10" ry="5" fill="#3B1F14"></ellipse><rect x="14" y="16" width="84" height="104" rx="20" fill="#B8391F"></rect><rect x="8" y="10" width="84" height="104" rx="20" fill="#F2B04A" stroke="#3B1F14" stroke-width="4"></rect><rect x="18" y="22" width="64" height="34" rx="9" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3.5"></rect><circle cx="38" cy="38" r="4.5" fill="#3B1F14"></circle><circle cx="62" cy="38" r="4.5" fill="#3B1F14"></circle><circle cx="39.5" cy="36.5" r="1.4" fill="#FFF4E2"></circle><circle cx="63.5" cy="36.5" r="1.4" fill="#FFF4E2"></circle><path d="M44 44 q6 7 12 0" fill="none" stroke="#3B1F14" stroke-width="3" stroke-linecap="round"></path><circle cx="29" cy="46" r="4" fill="#F2A08A"></circle><circle cx="71" cy="46" r="4" fill="#F2A08A"></circle><rect x="15" y="64" width="15" height="12" rx="4" fill="#C9472B" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="17" y="72.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="22.5" y="72.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#FFF4E2">C</text><rect x="34" y="64" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="36" y="72.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="41.5" y="72.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">7</text><rect x="53" y="64" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="55" y="72.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="60.5" y="72.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">8</text><rect x="72" y="64" width="15" height="12" rx="4" fill="#E8862F" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="74" y="72.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="79.5" y="72.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="9" fill="#FFF4E2">÷</text><rect x="15" y="79" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="17" y="87.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="22.5" y="87.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">4</text><rect x="34" y="79" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="36" y="87.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="41.5" y="87.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">5</text><rect x="53" y="79" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="55" y="87.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="60.5" y="87.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">6</text><rect x="72" y="79" width="15" height="12" rx="4" fill="#E8862F" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="74" y="87.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="79.5" y="87.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="9" fill="#FFF4E2">×</text><rect x="15" y="94" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="17" y="102.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="22.5" y="102.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">1</text><rect x="34" y="94" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="36" y="102.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="41.5" y="102.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">2</text><rect x="53" y="94" width="15" height="12" rx="4" fill="#FFF4E2" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="55" y="102.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="60.5" y="102.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="8" fill="#3B1F14">3</text><rect x="72" y="94" width="15" height="12" rx="4" fill="#E8862F" stroke="#3B1F14" stroke-width="2.6"></rect><rect x="74" y="102.5" width="11" height="2" rx="1" fill="#000" opacity=".08"></rect><text x="79.5" y="102.6" text-anchor="middle" font-family="Nunito,Noto Sans KR,sans-serif" font-weight="900" font-size="9" fill="#FFF4E2">+</text><path d="M26 12 a24 18 0 0 1 48 0z" fill="#C9472B" stroke="#3B1F14" stroke-width="3.5" stroke-linejoin="round"></path><rect x="22" y="6" width="56" height="10" rx="5" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"></rect><circle cx="50" cy="-10" r="7" fill="#FFF4E2" stroke="#3B1F14" stroke-width="3"></circle></symbol>
 <symbol id="puppy" viewBox="0 0 100 76"><path d="M18 40 q-16 -6 -12 -20 q8 4 10 14" fill="#E8A060" stroke="#6B3A22" stroke-width="2.5" stroke-linejoin="round"></path><path d="M26 54 l-10 14 M36 56 l-4 16 M64 56 l6 14 M72 52 l14 10" stroke="#E8A060" stroke-width="9" stroke-linecap="round"></path><ellipse cx="48" cy="46" rx="28" ry="15" fill="#E8A060"></ellipse><ellipse cx="50" cy="51" rx="18" ry="8" fill="#FFF1DE"></ellipse><circle cx="78" cy="28" r="16" fill="#E8A060"></circle><path d="M66 16 L64 2 L76 12z M88 14 L94 1 L96 18z" fill="#E8A060" stroke="#6B3A22" stroke-width="2" stroke-linejoin="round"></path><ellipse cx="84" cy="34" rx="9" ry="7" fill="#FFF1DE"></ellipse><circle cx="90" cy="31" r="2.8" fill="#3B1F14"></circle><circle cx="76" cy="25" r="2.2" fill="#3B1F14"></circle><circle cx="86" cy="24" r="2.2" fill="#3B1F14"></circle><path d="M84 38 q2 6 6 4" fill="#F28C8C" stroke="#6B3A22" stroke-width="1.5"></path><circle cx="71" cy="31" r="2.6" fill="#F2A08A"></circle><path d="M62 38 q16 8 30 0 l-2 7 q-13 6 -26 0z" fill="#C9472B"></path></symbol>
 <symbol id="deer" viewBox="0 0 124 100"><path d="M90 20 l-6 -16 M86 10 l-8 -4 M98 18 l6 -16 M102 8 l8 -2" fill="none" stroke="#6B3A22" stroke-width="4" stroke-linecap="round"></path><path d="M34 62 l-20 12 M42 66 l-12 22 M80 64 l18 18 M86 58 l24 4" stroke="#A0673E" stroke-width="8" stroke-linecap="round"></path><path d="M14 74 l-4 2 M30 88 l-2 4 M98 82 l4 2 M110 62 l4 0" stroke="#3B1F14" stroke-width="7" stroke-linecap="round"></path><ellipse cx="60" cy="58" rx="32" ry="17" fill="#A0673E"></ellipse><ellipse cx="62" cy="64" rx="20" ry="8" fill="#F1DCC2"></ellipse><circle cx="28" cy="50" r="6" fill="#FFF4E2"></circle><circle cx="96" cy="36" r="15" fill="#A0673E"></circle><path d="M82 30 q-12 -6 -14 -14 q10 0 16 8z M108 26 q10 -6 12 -14 q-10 0 -14 8z" fill="#A0673E"></path><ellipse cx="104" cy="44" rx="9" ry="7" fill="#F1DCC2"></ellipse><circle cx="110" cy="42" r="4.5" fill="#6B3A22"></circle><circle cx="92" cy="33" r="2.4" fill="#3B1F14"></circle><circle cx="102" cy="32" r="2.4" fill="#3B1F14"></circle><circle cx="88" cy="40" r="2.8" fill="#F2A08A"></circle><path d="M80 46 q16 10 30 2 l-1 8 q-15 7 -28 -2z" fill="#2F5D3A"></path><path d="M84 52 l-6 14" stroke="#2F5D3A" stroke-width="6" stroke-linecap="round"></path></symbol>
 <symbol id="girl" viewBox="0 0 60 120"><path d="M14 34 Q14 15 30 15 Q46 15 46 34 L47 48 Q30 44 13 48z" fill="#6B3A22"></path><circle cx="11" cy="44" r="6" fill="#6B3A22"></circle><circle cx="49" cy="44" r="6" fill="#6B3A22"></circle><path d="M22 92 v22 h7 v-22z M33 92 v22 h7 v-22z" fill="#3B1F14"></path><path d="M18 50 Q30 44 42 50 L49 96 H11z" fill="currentColor"></path><circle cx="30" cy="33" r="12" fill="#F6D2B0"></circle><path d="M18 30 Q30 16 42 30 Q36 25 30 26 Q24 25 18 30z" fill="#6B3A22"></path><path d="M17 31 Q30 10 43 31" fill="none" stroke="#C9472B" stroke-width="3"></path><circle cx="17" cy="33" r="5" fill="#C9472B"></circle><circle cx="43" cy="33" r="5" fill="#C9472B"></circle><circle cx="25.5" cy="35" r="1.6" fill="#3B1F14"></circle><circle cx="34.5" cy="35" r="1.6" fill="#3B1F14"></circle><circle cx="22.5" cy="39" r="2" fill="#F2A08A"></circle><circle cx="37.5" cy="39" r="2" fill="#F2A08A"></circle><path d="M27 40 q3 2.5 6 0" fill="none" stroke="#3B1F14" stroke-width="1.4" stroke-linecap="round"></path><rect x="18" y="46" width="24" height="6" rx="3" fill="#FFF4E2"></rect><path d="M20 58 q2 10 7 12 M40 58 q-2 10 -7 12" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"></path><rect x="24" y="64" width="13" height="12" rx="2.5" fill="#FFF4E2"></rect><path d="M37 67 h3 a3 3 0 0 1 0 6 h-3" fill="none" stroke="#FFF4E2" stroke-width="2"></path><path d="M28 61 q-2 -3 0 -6 M33 61 q-2 -3 0 -6" fill="none" stroke="#FFF4E2" stroke-width="1.5" stroke-linecap="round" opacity="0.8"></path></symbol>
@@ -282,13 +303,13 @@ h2{font-family:var(--f-body);font-weight:900}
 <div class="garland" aria-hidden="true"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M0 6 Q 25 46 50 8 Q 75 46 100 6" fill="none" stroke="#3B1F14" stroke-width="2.5" vector-effect="non-scaling-stroke"></path></svg><span class="bulb" style="left:4.00%;top:11.9px;--c:#F2B04A"></span><span class="bulb" style="left:12.36%;top:21.0px;--c:#E8862F"></span><span class="bulb" style="left:20.73%;top:25.8px;--c:#FFF4E2"></span><span class="bulb" style="left:29.09%;top:26.1px;--c:#C9472B"></span><span class="bulb" style="left:37.45%;top:22.1px;--c:#F2B04A"></span><span class="bulb" style="left:45.82%;top:13.8px;--c:#FFF4E2"></span><span class="bulb" style="left:54.18%;top:13.8px;--c:#E8862F"></span><span class="bulb" style="left:62.55%;top:22.1px;--c:#F2B04A"></span><span class="bulb" style="left:70.91%;top:26.1px;--c:#C9472B"></span><span class="bulb" style="left:79.27%;top:25.8px;--c:#FFF4E2"></span><span class="bulb" style="left:87.64%;top:21.0px;--c:#E8862F"></span><span class="bulb" style="left:96.00%;top:11.9px;--c:#F2B04A"></span></div>
 <div class="wrap">
 <div class="topbar">
-<div class="period"><span>2026 하반기 특별 프로모션</span><span>집행기간 ~ 2026.12.31</span></div>
+<div class="period"><span>2026 하반기 2차 특별 프로모션</span><span>집행기간 ~ 2026.12.31</span></div>
 <svg class="logo-svg" viewBox="0 0 960 175" role="img" aria-label="nap reward"><use href="#logo"></use></svg>
 </div>
 <div class="headline">
 <span class="pill">광고주 · 대행사 · 렙사 모두 대상</span>
 <h1>연말정산보다<br><span>먼저 오는 혜택</span></h1>
-<p class="sub">CPSNS 전 상품 NET 단가 <del class="slash">280원</del> → <strong>240원</strong></p>
+<p class="sub"><span class="sl">CPM NET 단가 <del class="slash">3,000원</del> → <strong>2,000원</strong></span><span class="sl">CPSNS NET 단가 <del class="slash">280원</del> → <strong>240원</strong></span></p>
 <a class="calc-link" href="#calc"><span class="tag">10초면 끝</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B1F14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M8 6h8"></path><path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h4"></path></svg>우리 캠페인 할인금액 계산해 보기<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B1F14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a>
 </div>
 <div class="scene">
@@ -350,18 +371,25 @@ h2{font-family:var(--f-body);font-weight:900}
 <svg class="deco" style="right:5%;top:180px" width="40" height="40" aria-hidden="true"><use href="#leaf" width="40" height="40" fill="#C9472B"></use></svg>
 <div class="wrap">
 <div class="card">
-<span class="ribbon">nap 연말 특별 단가 할인</span>
-<div class="stamp" aria-hidden="true"><span class="s1">건당</span><span class="s2">-40원</span><span class="s3">DOWN</span></div>
-<span class="card-label">CPSNS 전 상품 · NET 단가</span>
+<span class="ribbon">nap리워드 특별 단가 할인</span>
+<div class="stamp" aria-hidden="true"><span class="s1">최대</span><span class="s2">-33%</span><span class="s3">DOWN</span></div>
+<div class="prod"><span class="card-label">CPM 노출형 상품 · 1,000회 노출당</span>
+<div class="price-row">
+<del class="slash">3,000원</del>
+<svg class="arrow" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9h10V4.8c0-.9 1.1-1.4 1.8-.7l7.2 7.2c.4.4.4 1 0 1.4l-7.2 7.2c-.7.7-1.8.2-1.8-.7V15h-10a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" fill="#6E4A3A"></path></svg>
+<span class="price-new"><span class="hl">2,000</span><small>원</small></span>
+</div></div>
+<hr class="pdiv">
+<div class="prod"><span class="card-label">CPSNS 전 상품 · 건당</span>
 <div class="price-row">
 <del class="slash">280원</del>
 <svg class="arrow" width="44" height="44" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9h10V4.8c0-.9 1.1-1.4 1.8-.7l7.2 7.2c.4.4.4 1 0 1.4l-7.2 7.2c-.7.7-1.8.2-1.8-.7V15h-10a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1z" fill="#6E4A3A"></path></svg>
 <span class="price-new"><span class="hl">240</span><small>원</small></span>
-</div>
-<div class="chips"><span class="chip">건당 40원<svg viewBox="5 4 14 17" fill="none" stroke="#6B2414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-label="인하" role="img"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></span><span class="chip">약 14% 할인</span><span class="chip">집행기간 ~12/31</span></div>
+</div></div>
+<div class="chips"><span class="chip">CPM 1,000원<svg viewBox="5 4 14 17" fill="none" stroke="#6B2414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-label="인하" role="img"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></span><span class="chip">CPSNS 40원<svg viewBox="5 4 14 17" fill="none" stroke="#6B2414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-label="인하" role="img"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></span><span class="chip">집행기간 ~12/31</span></div>
 <div class="exclude">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 7v6"></path><path d="M12 17h.01"></path></svg>
-<span>CPSNS 상품은 특별 프로모션 대상으로, 4분기 프로모션 대상에서는 제외됩니다</span>
+<span>특별 프로모션 상품은, 4분기 프로모션 대상에서 제외됩니다</span>
 </div>
 <span class="note">※ NET 단가 기준이며, 수수료는 별도 마크업이 필요합니다</span>
 </div>
@@ -383,7 +411,7 @@ h2{font-family:var(--f-body);font-weight:900}
 <use class="swing" href="#mitten" x="1080" y="16" width="30" height="42" fill="#C9472B"></use>
 </svg>
 <div class="wrap">
-<div class="sec-head"><h2>채널 7개, 전부 240원</h2></div>
+<div class="sec-head"><h2>CPSNS 적용 채널, 전부 240원</h2></div>
 <div class="channels">
 <div class="ch-row">
 <span class="ch"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B8391F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z M10 9l5 3-5 3z"></path></svg>유튜브</span>
@@ -409,9 +437,13 @@ h2{font-family:var(--f-body);font-weight:900}
 </div>
 <div class="calc-wrap">
 <svg class="buddy" viewBox="-16 -20 132 142" role="img" aria-label="빨간 털모자를 쓰고 웃고 있는 계산기 캐릭터"><use href="#buddy" x="-16" y="-20" width="132" height="142"></use></svg>
-<div class="calc">
+<div class="calc is-cpm" id="calc-box">
+<div class="tabs" role="group" aria-label="상품 선택">
+<button class="tab" type="button" id="prod-cpm" aria-pressed="true">CPM</button>
+<button class="tab" type="button" id="prod-cpsns" aria-pressed="false">CPSNS</button>
+</div>
 <div class="tabs" role="group" aria-label="계산 기준">
-<button class="tab" type="button" id="tab-count" aria-pressed="true">집행 건수로</button>
+<button class="tab" type="button" id="tab-count" aria-pressed="true">집행 수량으로</button>
 <button class="tab" type="button" id="tab-budget" aria-pressed="false">집행 예산으로</button>
 </div>
 <div class="fee">
@@ -506,8 +538,10 @@ h2{font-family:var(--f-body);font-weight:900}
 <section class="sec">
 <div class="wrap contact">
 <h2 style="font-size:clamp(24px,5.4vw,34px);line-height:1.3;margin-bottom:5px">올해가 가기 전에, 따뜻하게 집행하세요</h2>
-<a class="btn" href="https://drive.google.com/file/d/14G40Jgo8HEy49siIdoSy1_BxN2Dil3jA/view?usp=sharing" target="_blank" rel="noopener">CPSNS 소개서 바로가기
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:8px"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+<div class="btns"><a class="btn" href="https://drive.google.com/file/d/1sYEn8wWY2e1F6RCBr2kEtOI0zTHEkX-p/view?usp=sharing" target="_blank" rel="noopener">통합상품 소개서
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:8px"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a><a class="btn" href="https://drive.google.com/file/d/1iuWUo_uNP0-LAldguCSTeF9Hr6aJL7lD/view?usp=sharing" target="_blank" rel="noopener">노출형 소개서
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:8px"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a><a class="btn" href="https://drive.google.com/file/d/14G40Jgo8HEy49siIdoSy1_BxN2Dil3jA/view?usp=sharing" target="_blank" rel="noopener">CPSNS 소개서
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:8px"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a></div>
 <div class="who">
 <div class="mail"><code id="mail">nap_perf@nasmedia.co.kr</code><button class="copy" type="button" id="copy-btn">주소 복사</button></div>
 <span class="copied" id="copied" aria-live="polite"></span>
@@ -515,8 +549,8 @@ h2{font-family:var(--f-body);font-weight:900}
 <div class="notice">
 <strong>유의사항</strong>
 <ul>
-<li>집행기간 ~12/31까지인 CPSNS 캠페인에 적용됩니다.</li>
-<li>CPSNS 상품은 특별 프로모션 대상으로, 4분기 프로모션 대상에서 제외됩니다.</li>
+<li>집행기간 ~12/31까지인 CPM · CPSNS 캠페인에 적용됩니다.</li>
+<li>특별 프로모션 상품은, 4분기 프로모션 대상에서 제외됩니다.</li>
 <li>최소집행금액은 1개월 기준 300만원입니다. (vat-)</li>
 <li>NET단가 기준 할인이며, 수수료는 별도 마크업 필요합니다.</li>
 </ul>
@@ -552,7 +586,9 @@ h2{font-family:var(--f-body);font-weight:900}
 
 <script>
 (function(){
-  var OLD = 280, NEW = 240, MAX = 10000000000;
+  var PROD = {cpm:{old:3000,neu:2000,per:1000,unit:'회',name:'노출 수',more:'회 더 노출해요',lead:' 노출하면',fixed:{}},
+              cpsns:{old:280,neu:240,per:1,unit:'건',name:'집행 건수',more:'건 더 집행해요',lead:' 집행하면',fixed:{10:310}}};
+  var prod = 'cpm', OLD = 3000, NEW = 2000, MAX = 10000000000;
   var mode = 'count';
   var input = document.getElementById('calc-amount');
   var label = document.getElementById('calc-label');
@@ -569,6 +605,7 @@ h2{font-family:var(--f-body);font-weight:900}
   var fine = document.getElementById('res-fine');
   var fee = 0;
   var PRESETS = {
+    cpm: [[1000000,'100만 회'],[5000000,'500만 회'],[10000000,'1,000만 회'],[30000000,'3,000만 회']],
     count: [[10000,'1만 건'],[50000,'5만 건'],[100000,'10만 건'],[300000,'30만 건']],
     budget: [[3000000,'300만 원'],[5000000,'500만 원'],[10000000,'1,000만 원'],[30000000,'3,000만 원']]
   };
@@ -580,8 +617,8 @@ h2{font-family:var(--f-body);font-weight:900}
   function render(){
     var n = read();
     var k = (100 - fee) / 100;
-    var OLD_FIXED = {10: 310};
-    var uo = OLD_FIXED[fee] || Math.round(OLD / k), un = Math.round(NEW / k);
+    var P = PROD[prod];
+    var uo = P.fixed[fee] || Math.round(P.old / k), un = Math.round(P.neu / k);
     var tag = fee ? ' (수수료 ' + fee + '% 포함)' : ' (NET)';
     if (fee) {
       markupNote.classList.add('on');
@@ -593,14 +630,15 @@ h2{font-family:var(--f-body);font-weight:900}
       fine.textContent = '※ NET 단가 기준 계산 · 수수료 별도';
     }
     if (mode === 'count') {
-      rows.innerHTML = row('old','기존 단가 ' + fmtU(uo) + '원' + tag, fmt(n*uo)+'원') + row('','프로모션 단가 ' + fmtU(un) + '원' + tag, fmt(n*un)+'원');
-      lead.textContent = n ? fmt(n)+'건 집행하면' : '집행 건수를 입력해 주세요';
-      big.innerHTML = '<em>'+fmt(n*(uo-un))+'원</em> 아껴요';
+      var q = n / P.per;
+      rows.innerHTML = row('old','기존 단가 ' + fmtU(uo) + '원' + tag, fmt(q*uo)+'원') + row('','프로모션 단가 ' + fmtU(un) + '원' + tag, fmt(q*un)+'원');
+      lead.textContent = n ? fmt(n)+P.unit+P.lead : P.name+'를 입력해 주세요';
+      big.innerHTML = '<em>'+fmt(q*(uo-un))+'원</em> 아껴요';
     } else {
-      var a = Math.floor(n/uo + 1e-9), b = Math.floor(n/un + 1e-9);
-      rows.innerHTML = row('old','기존 단가 ' + fmtU(uo) + '원' + tag, fmt(a)+'건') + row('','프로모션 단가 ' + fmtU(un) + '원' + tag, fmt(b)+'건');
+      var a = Math.floor(n/uo*P.per + 1e-9), b = Math.floor(n/un*P.per + 1e-9);
+      rows.innerHTML = row('old','기존 단가 ' + fmtU(uo) + '원' + tag, fmt(a)+P.unit) + row('','프로모션 단가 ' + fmtU(un) + '원' + tag, fmt(b)+P.unit);
       lead.textContent = n ? '같은 '+fmt(n)+'원이면' : '집행 예산을 입력해 주세요';
-      big.innerHTML = '<em>'+fmt(b-a)+'건</em> 더 집행해요';
+      big.innerHTML = '<em>'+fmt(b-a)+P.unit+'</em> '+P.more.slice(2);
     }
     big.classList.remove('pop'); void big.offsetWidth; big.classList.add('pop');
   }
@@ -612,11 +650,12 @@ h2{font-family:var(--f-body);font-weight:900}
     mode = m;
     tabCount.setAttribute('aria-pressed', m==='count');
     tabBudget.setAttribute('aria-pressed', m==='budget');
-    label.textContent = m==='count' ? '집행 건수' : '집행 예산';
-    unit.textContent = m==='count' ? '건' : '원';
-    input.value = fmt(PRESETS[m][0][0]);
+    var P = PROD[prod], key = m==='count' ? (prod==='cpm' ? 'cpm' : 'count') : 'budget';
+    label.textContent = m==='count' ? P.name : '집행 예산';
+    unit.textContent = m==='count' ? P.unit : '원';
+    input.value = fmt(PRESETS[key][0][0]);
     presets.innerHTML = '';
-    PRESETS[m].forEach(function(p){
+    PRESETS[key].forEach(function(p){
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'preset'; b.textContent = p[1];
       b.addEventListener('click', function(){ input.value = fmt(p[0]); render(); });
@@ -637,6 +676,11 @@ h2{font-family:var(--f-body);font-weight:900}
   });
   tabCount.addEventListener('click', function(){ setMode('count'); });
   tabBudget.addEventListener('click', function(){ setMode('budget'); });
+  var pCpm = document.getElementById('prod-cpm'), pCps = document.getElementById('prod-cpsns');
+  var calcBox = document.getElementById('calc-box');
+  function setProd(p){ prod = p; calcBox.classList.toggle('is-cpm', p==='cpm'); calcBox.classList.toggle('is-cpsns', p==='cpsns'); pCpm.setAttribute('aria-pressed', p==='cpm'); pCps.setAttribute('aria-pressed', p==='cpsns'); setMode(mode); }
+  pCpm.addEventListener('click', function(){ setProd('cpm'); });
+  pCps.addEventListener('click', function(){ setProd('cpsns'); });
   setMode('count');
 
 
